@@ -55,7 +55,7 @@ const Introduct = () => {
                         <p className="text-xl font-bold mx-5 pt-3 ">Đọc nhiều</p>
                         <div className="flex flex-col gap-y-3 pt-2 pl-5 pb-5">
                             {articles.slice(0, 5).map((article, index) => (
-                                <a key={article.id || index} className=" grid grid-cols-4 justify-center hover:text-blue-900" href={article.hashtags} >
+                                <a key={article.id || index} className=" grid grid-cols-4 justify-center hover:text-blue-900" href={`article/${article.hashtags}`} >
                                     <img src={article.imgArticle} alt="" className="col-span-1 row-span-1" />
                                     <p className="col-span-3 text-sm font-bold ml-2">{article.nameArticle}</p>
                                 </a>
@@ -70,19 +70,19 @@ const Introduct = () => {
                         </div>
                         <div >
                             {podcasts.slice(0, 1).map((podcast) => (
-                                <div className="flex flex-col items-center" key={podcast.id}>
+                                <a className="flex flex-col items-center" key={podcast.id} href={podcast.id.toString()}>
                                     <img src={podcast.imgPodcast} alt="img" className="w-10/12" />
                                     <div className="w-10/12 text-center text-white font-bold pt-2">{podcast.namePodcast}</div>
-                                </div>
+                                </a>
                             ))}
                             {podcasts.slice(1, 4).map((podcast) => (
-                                <div key={podcast.id} className="flex flex-col items-center w-full">
+                                <a key={podcast.id} className="flex flex-col items-center w-full" href={podcast.id.toString()} >
                                     <hr className="text-white w-10/12 my-3" />
                                     <div className="grid grid-cols-3 w-10/12">
                                         <img src={podcast.imgPodcast} alt={podcast.namePodcast} className="col-span-1" />
                                         <span className="col-span-2 text-sm ml-2 text-white font-bold">{podcast.namePodcast}</span>
                                     </div>
-                                </div>
+                                </a>
                             ))}
                             <div className="mb-5"></div>
                         </div>
