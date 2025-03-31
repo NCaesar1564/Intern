@@ -1,0 +1,1460 @@
+{
+    "hashtags": [
+        "cách mạng tinh gọn bộ máy",
+        "Sáp nhập tỉnh thành",
+        "Tin Tức A",
+        "Tin Tức B"
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "BOOK",
+            "href": "book"
+        },
+        {
+            "id": 2,
+            "name": "MULTIMEDIA",
+            "href": "multimedia"
+        },
+        {
+            "id": 3,
+            "name": "KINH DOANH",
+            "href": "kinh-doanh"
+        },
+        {
+            "id": 4,
+            "name": "LIFESTYLE",
+            "href": "lifestyle"
+        },
+        {
+            "id": 5,
+            "name": "CÔNG NGHỆ",
+            "href": "cong-nghe"
+        },
+        {
+            "id": 6,
+            "name": "SỨC KHỎE",
+            "href": "suc-khoe"
+        },
+        {
+            "id": 7,
+            "name": "ĐỜI SỐNG",
+            "href": "doi-song"
+        },
+        {
+            "id": 8,
+            "name": "DU LỊCH",
+            "href": "du-lich"
+        },
+        {
+            "id": 9,
+            "name": "GIẢI TRÍ",
+            "href": "giai-tri"
+        },
+        {
+            "id": 10,
+            "name": "THỂ THAO",
+            "href": "the-thao"
+        },
+        {
+            "id": 11,
+            "name": "XÃ HỘI",
+            "href": "xa-hoi"
+        },
+        {
+            "id": 12,
+            "name": "PHÁP LUẬT",
+            "href": "phap-luat"
+        },
+        {
+            "id": 13,
+            "name": "XUẤT BẢN",
+            "href": "xuat-ban"
+        },
+        {
+            "id": 14,
+            "name": "THẾ GIỚI",
+            "href": "the-gioi"
+        },
+        {
+            "id": 15,
+            "name": "THẾ GIỚI SÁCH",
+            "href": "the-gioi-sach"
+        },
+        {
+            "id": 16,
+            "name": "XE",
+            "href": "xe"
+        },
+        {
+            "id": 17,
+            "name": "TÁC GIẢ",
+            "href": "tac-gia"
+        },
+        {
+            "id": 18,
+            "name": "CUỐN SÁCH TÔI ĐỌC",
+            "href": "cuon-sach-toi-doc"
+        },
+        {
+            "id": 19,
+            "name": "VĂN HÓA HỌC",
+            "href": "van-hoa-hoc"
+        },
+        {
+            "id": 20,
+            "name": "TDN",
+            "href": "tdn"
+        },
+        {
+            "id": 21,
+            "name": "MAGAZINE",
+            "href": "magazine"
+        },
+        {
+            "id": 22,
+            "name": "VIDEO",
+            "href": "video"
+        }
+    ],
+    "subcategories": [
+        {
+            "id": 1,
+            "name": "DOANH NHÂN",
+            "href": "kinh-doanh-doanh-nhan",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 2,
+            "name": "BẤT ĐỘNG SẢN",
+            "href": "kinh-doanh-bat-dong-san",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 3,
+            "name": "TÀI CHÍNH - CHỨNG KHOÁN",
+            "href": "kinh-doanh-tai-chinh-chung-khoan",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 4,
+            "name": "THỊ TRƯỜNG",
+            "href": "kinh-doanh-thi-truong",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 5,
+            "name": "KINH TẾ SỐ",
+            "href": "kinh-doanh-kinh-te-so",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 6,
+            "name": "STYLE",
+            "href": "lifestyle-style",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 7,
+            "name": "MONEY",
+            "href": "lifestyle-money",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 8,
+            "name": "MOBILE",
+            "href": "cong-nghe-mobile",
+            "category": "CÔNG NGHỆ"
+        },
+        {
+            "id": 9,
+            "name": "INTERNET",
+            "href": "cong-nghe-internet",
+            "category": "CÔNG NGHỆ"
+        },
+        {
+            "id": 10,
+            "name": "THÀNH TỰU Y KHOA",
+            "href": "suc-khoe-thanh-tuu-y-khoa",
+            "category": "SỨC KHỎE"
+        },
+        {
+            "id": 11,
+            "name": "THẨM MỸ",
+            "href": "suc-khoe-tham-my",
+            "category": "SỨC KHỎE"
+        },
+        {
+            "id": 12,
+            "name": "GIỚI TRẺ",
+            "href": "doi-song-gioi-tre",
+            "category": "ĐỜI SỐNG"
+        },
+        {
+            "id": 13,
+            "name": "ĐỊA ĐIỂM DU LỊCH",
+            "href": "du-lich-dia-diem",
+            "category": "DU LỊCH"
+        },
+        {
+            "id": 14,
+            "name": "ĐỜI SỐNG SAO",
+            "href": "giai-tri-doi-song-sao",
+            "category": "GIẢI TRÍ"
+        },
+        {
+            "id": 15,
+            "name": "BÓNG ĐÁ ANH",
+            "href": "the-thao-bong-da-anh",
+            "category": "THỂ THAO"
+        }
+    ],
+    "articles": [
+        {
+            "id": 1,
+            "idContent": 1,
+            "imgArticle": "/images/multimedia1.webp",
+            "nameArticle": "Công nghệ AI thay đổi cách làm phim hiện đại",
+            "description": "Trí tuệ nhân tạo đang cách mạng hóa ngành công nghiệp điện ảnh với những công cụ dựng phim tự động.",
+            "hashtags": "AI-trong-phim-anh",
+            "category": "MULTIMEDIA",
+            "author": "Nguyễn Văn A",
+            "content": "<div class=\"flex w-full justify-center\">\r\n  <div class=\"flex w-3\/4 flex-col items-center justify-center\">\r\n    <div class=\"flex flex-col items-start\">\r\n      <p class=\"text-start\">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, excepturi suscipit possimus rerum accusamus voluptatum ipsa ut inventore perferendis dolores unde sit provident pariatur veritatis enim dolorem? Nulla, vero harum.<\/p>\r\n      <p class=\"mt-3\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum rerum odit eius eaque alias et commodi necessitatibus at deserunt! Esse tempore vero quia sed est possimus ab minus dicta cumque!<\/p>\r\n      <p class=\"mt-3\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores asperiores neque eligendi sint cupiditate, consequatur sapiente quis! Doloremque debitis sit facere quo delectus, rerum provident beatae explicabo possimus hic? Rerum.<\/p>\r\n      <p class=\"mt-3\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores asperiores neque eligendi sint cupiditate, consequatur sapiente quis! Doloremque debitis sit facere quo delectus, rerum provident beatae explicabo possimus hic? Rerum.<\/p>\r\n      <img src=\"..\/Images\/chagee_znews.webp\" alt=\"img1\" class=\"mt-5 w-full\" \/>\r\n      <h2 class=\"mt-8 text-start font-bold\">Topic 1 text-md<\/h2>\r\n      <p class=\"mt-3\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores asperiores neque eligendi sint cupiditate, consequatur sapiente quis! Doloremque debitis sit facere quo delectus, rerum provident beatae explicabo possimus hic? Rerum.<\/p>\r\n      <h2 class=\"mt-8 text-start font-bold\">Topic 2 text-md<\/h2>\r\n      <p class=\"mt-3\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sunt cum eaque omnis repellendus veritatis eos tenetur voluptatum. Repudiandae dolorum ea totam ratione non exercitationem enim pariatur nam veniam. Eligendi.<\/p>\r\n      <h2 class=\"mt-8 text-start font-bold\">Topic 3 text-md<\/h2>\r\n      <p class=\"mt-3\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sunt cum eaque omnis repellendus veritatis eos tenetur voluptatum. Repudiandae dolorum ea totam ratione non exercitationem enim pariatur nam veniam. Eligendi.<\/p>\r\n      <p class=\"mt-3\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sunt cum eaque omnis repellendus veritatis eos tenetur voluptatum. Repudiandae dolorum ea totam ratione non exercitationem enim pariatur nam veniam. Eligendi.<\/p>\r\n      <p class=\"mt-3\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita natus officia et deleniti quasi cupiditate magni, quisquam laboriosam, enim ex facilis. Illo necessitatibus sunt doloremque laboriosam odio magnam, sed in!<\/p>\r\n    <\/div>\r\n  <\/div>\r\n<\/div>\r\n"
+        },
+        {
+            "id": 2,
+            "idContent": 2,
+            "imgArticle": "/images/multimedia2.webp",
+            "nameArticle": "Sự phát triển của thực tế ảo trong giải trí",
+            "description": "Thực tế ảo đang mở ra nhiều cơ hội mới trong lĩnh vực trò chơi và giải trí tương tác.",
+            "hashtags": "thuc-te-ao-giai-tri",
+            "category": "MULTIMEDIA",
+            "author": "Nguyễn Văn A",
+            "content": "<div class=\"flex w-full justify-center\">\r\n  <div class=\"flex w-3\/4 flex-col items-center justify-center\">\r\n    <div class=\"flex w-3\/4 flex-col items-center\">\r\n      <div class=\"flex w-full flex-col items-start\">\r\n        <img src=\"..\/Images\/chagee_znews.webp\" alt=\"img1\" class=\"mt-5 w-full\" \/>\r\n        <p class=\"mt-3 mb-5 text-xs\">Description for image (for example)<\/p>\r\n      <\/div>\r\n      <p class=\"w-3\/4 text-start\">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, excepturi suscipit possimus rerum accusamus voluptatum ipsa ut inventore perferendis dolores unde sit provident pariatur veritatis enim dolorem? Nulla, vero harum.<\/p>\r\n      <h2 class=\"mt-8 w-2\/3 text-center text-2xl font-bold\">Topic 1 Text-2xl<\/h2>\r\n      <p class=\"mt-3 w-3\/4 first-letter:float-left first-letter:mr-2 first-letter:text-5xl first-letter:leading-none first-letter:font-bold\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam et quis sequi dicta aliquid. Velit reprehenderit non rerum dolorem, ab quo illum consequuntur, eum earum eligendi nulla hic. Rerum, sapiente?<\/p>\r\n      <p class=\"mt-3 w-3\/4\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum rerum odit eius eaque alias et commodi necessitatibus at deserunt! Esse tempore vero quia sed est possimus ab minus dicta cumque!<\/p>\r\n      <div class=\"flex w-full flex-col items-start\">\r\n        <img src=\"..\/Images\/chagee_znews.webp\" alt=\"img2\" class=\"mt-5 w-full\" \/>\r\n        <p class=\"mt-2 mb-5 text-xs\">Description for image (for example)<\/p>\r\n      <\/div>\r\n      <p class=\"mt-3 w-3\/4\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores asperiores neque eligendi sint cupiditate, consequatur sapiente quis! Doloremque debitis sit facere quo delectus, rerum provident beatae explicabo possimus hic? Rerum.<\/p>\r\n      <p class=\"mt-3 w-3\/4\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores asperiores neque eligendi sint cupiditate, consequatur sapiente quis! Doloremque debitis sit facere quo delectus, rerum provident beatae explicabo possimus hic? Rerum.<\/p>\r\n      <p class=\"mt-3 w-3\/4\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores asperiores neque eligendi sint cupiditate, consequatur sapiente quis! Doloremque debitis sit facere quo delectus, rerum provident beatae explicabo possimus hic? Rerum.<\/p>\r\n      <h2 class=\"mt-8 w-3\/4 text-center text-2xl font-bold\">Topic 2 Text-2xl<\/h2>\r\n      <p class=\"mt-3 w-3\/4 first-letter:float-left first-letter:mr-2 first-letter:text-5xl first-letter:leading-none first-letter:font-bold\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam et quis sequi dicta aliquid. Velit reprehenderit non rerum dolorem, ab quo illum consequuntur, eum earum eligendi nulla hic. Rerum, sapiente?<\/p>\r\n      <p class=\"mt-3 w-3\/4\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sunt cum eaque omnis repellendus veritatis eos tenetur voluptatum. Repudiandae dolorum ea totam ratione non exercitationem enim pariatur nam veniam. Eligendi.<\/p>\r\n      <p class=\"mt-3 w-3\/4\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sunt cum eaque omnis repellendus veritatis eos tenetur voluptatum. Repudiandae dolorum ea totam ratione non exercitationem enim pariatur nam veniam. Eligendi.<\/p>\r\n      <p class=\"mt-3 w-3\/4\">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus sunt cum eaque omnis repellendus veritatis eos tenetur voluptatum. Repudiandae dolorum ea totam ratione non exercitationem enim pariatur nam veniam. Eligendi.<\/p>\r\n      <div class=\"flex w-full flex-col items-start\">\r\n        <img src=\"..\/Images\/chagee_znews.webp\" alt=\"img3\" class=\"mt-5 w-full\" \/>\r\n        <p class=\"mt-2 mb-5 text-xs\">Description for image (for example)<\/p>\r\n      <\/div>\r\n      <p class=\"mt-3 w-3\/4\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita natus officia et deleniti quasi cupiditate magni, quisquam laboriosam, enim ex facilis. Illo necessitatibus sunt doloremque laboriosam odio magnam, sed in!<\/p>\r\n      <p class=\"mt-3 w-3\/4\">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita natus officia et deleniti quasi cupiditate magni, quisquam laboriosam, enim ex facilis. Illo necessitatibus sunt doloremque laboriosam odio magnam, sed in!<\/p>\r\n    <\/div>\r\n  <\/div>\r\n<\/div>\r\n"
+        },
+        {
+            "id": 3,
+            "idContent": 1,
+            "imgArticle": "/images/multimedia3.webp",
+            "nameArticle": "Những công nghệ giúp livestream trở nên chuyên nghiệp hơn",
+            "description": "Công nghệ camera và phần mềm hiện đại giúp người dùng tạo nội dung chất lượng cao hơn.",
+            "hashtags": "livestream-cong-nghe",
+            "category": "MULTIMEDIA",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore?",
+            "author": "Nguyễn Văn A"
+        },
+        {
+            "id": 4,
+            "idContent": 2,
+            "imgArticle": "/images/multimedia4.webp",
+            "nameArticle": "Xu hướng phim hoạt hình 3D trong năm nay",
+            "description": "Sự bùng nổ của phim hoạt hình 3D đang chiếm lĩnh màn ảnh rộng với những sản phẩm chất lượng cao.",
+            "hashtags": "phim-hoat-hinh-3D",
+            "category": "MULTIMEDIA",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore?",
+            "author": "Nguyễn Văn A"
+        },
+        {
+            "id": 5,
+            "idContent": 1,
+            "imgArticle": "/images/multimedia5.webp",
+            "nameArticle": "Tương lai của âm nhạc số và nền tảng streaming",
+            "description": "Các nền tảng nhạc số đang thay đổi cách con người nghe nhạc và thưởng thức âm thanh.",
+            "hashtags": "am-nhac-so-streaming",
+            "category": "MULTIMEDIA",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore?",
+            "author": "Nguyễn Văn A"
+        },
+        {
+            "id": 6,
+            "idContent": 1,
+            "imgArticle": "/images/multimedia6.webp",
+            "nameArticle": "Sự trỗi dậy của game đồ họa thực tế",
+            "description": "Những công nghệ đồ họa tiên tiến đang tạo nên những tựa game chân thực hơn bao giờ hết.",
+            "hashtags": "game-do-hoa-thuc-te",
+            "category": "MULTIMEDIA",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore?",
+            "author": "Nguyễn Văn A"
+        },
+        {
+            "id": 7,
+            "idContent": 2,
+            "imgArticle": "/images/multimedia7.webp",
+            "nameArticle": "Thiết bị quay phim 8K - Bước tiến của công nghệ",
+            "description": "Những chiếc camera 8K đang thay đổi ngành công nghiệp quay phim và truyền thông số.",
+            "hashtags": "quay-phim-8K",
+            "category": "MULTIMEDIA",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore?",
+            "author": "Nguyễn Văn A"
+        },
+        {
+            "id": 8,
+            "idContent": 1,
+            "imgArticle": "/images/multimedia8.webp",
+            "nameArticle": "Những ứng dụng chỉnh sửa ảnh tốt nhất năm nay",
+            "description": "Khám phá những ứng dụng chỉnh sửa ảnh hàng đầu được yêu thích bởi các chuyên gia.",
+            "hashtags": "ung-dung-chinh-anh",
+            "category": "MULTIMEDIA",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellat quia veniam quos. Facilis id neque, similique debitis illo dignissimos commodi vitae placeat consequatur recusandae non praesentium sapiente tempore labore?",
+            "author": "Nguyễn Văn A"
+        },
+        {
+            "id": 9,
+            "idContent": 2,
+            "imgArticle": "/images/multimedia9.webp",
+            "nameArticle": "Phát triển nội dung số trong kỷ nguyên 4.0",
+            "description": "Sự phát triển nhanh chóng của nội dung số đang mở ra nhiều cơ hội kinh doanh mới.",
+            "hashtags": "noi-dung-so-4.0",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 10,
+            "idContent": 1,
+            "imgArticle": "/images/multimedia10.webp",
+            "nameArticle": "Công nghệ thực tế tăng cường trong truyền thông",
+            "description": "Truyền thông số đang ứng dụng thực tế tăng cường để nâng cao trải nghiệm người dùng.",
+            "hashtags": "thuc-te-tang-cuong-truyen-thong",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 11,
+            "idContent": 2,
+            "imgArticle": "/images/book1.webp",
+            "nameArticle": "Sách mới về cuộc đời và sự nghiệp của Steve Jobs",
+            "description": "Cuốn sách kể về hành trình sáng tạo và những thăng trầm trong cuộc đời của Steve Jobs.",
+            "hashtags": "Sach-moi-ve-Steve-Jobs",
+            "category": "BOOK"
+        },
+        {
+            "id": 12,
+            "idContent": 1,
+            "imgArticle": "/images/book2.webp",
+            "nameArticle": "Những cuốn sách kinh điển nên đọc một lần trong đời",
+            "description": "Danh sách những cuốn sách kinh điển mà ai cũng nên đọc ít nhất một lần trong đời.",
+            "hashtags": "Nhung-cuon-sach-kinh-dien-nen-doc",
+            "category": "BOOK"
+        },
+        {
+            "id": 13,
+            "idContent": 2,
+            "imgArticle": "/images/book3.webp",
+            "nameArticle": "Tác giả nổi tiếng ra mắt tiểu thuyết mới",
+            "description": "Cuốn tiểu thuyết mới của tác giả đình đám đang nhận được nhiều sự quan tâm từ độc giả.",
+            "hashtags": "Tac-gia-noi-tieng-ra-mat-tieu-thuyet-moi",
+            "category": "BOOK"
+        },
+        {
+            "id": 14,
+            "idContent": 1,
+            "imgArticle": "/images/book4.webp",
+            "nameArticle": "Cuốn sách giúp bạn thay đổi tư duy tài chính",
+            "description": "Cuốn sách hướng dẫn bạn cách quản lý tài chính cá nhân hiệu quả.",
+            "hashtags": "Cuon-sach-thay-doi-tu-duy-tai-chinh",
+            "category": "BOOK"
+        },
+        {
+            "id": 15,
+            "idContent": 2,
+            "imgArticle": "/images/book5.webp",
+            "nameArticle": "Những cuốn sách hay về tâm lý học",
+            "description": "Danh sách những cuốn sách giúp bạn hiểu rõ hơn về tâm lý con người.",
+            "hashtags": "Nhung-cuon-sach-hay-ve-tam-ly-hoc",
+            "category": "BOOK"
+        },
+        {
+            "id": 16,
+            "idContent": 1,
+            "imgArticle": "/images/book6.webp",
+            "nameArticle": "Top 5 cuốn sách truyền cảm hứng mạnh mẽ",
+            "description": "Những cuốn sách giúp bạn tìm thấy động lực và cảm hứng trong cuộc sống.",
+            "hashtags": "Top-5-cuon-sach-truyen-cam-hung",
+            "category": "BOOK"
+        },
+        {
+            "id": 17,
+            "idContent": 2,
+            "imgArticle": "/images/book7.webp",
+            "nameArticle": "Lịch sử văn học qua những tác phẩm nổi tiếng",
+            "description": "Những tác phẩm nổi tiếng đánh dấu sự phát triển của nền văn học thế giới.",
+            "hashtags": "Lich-su-van-hoc-qua-nhung-tac-pham-noi-tieng",
+            "category": "BOOK"
+        },
+        {
+            "id": 18,
+            "idContent": 1,
+            "imgArticle": "/images/book8.webp",
+            "nameArticle": "Cuốn sách giúp bạn rèn luyện thói quen tốt",
+            "description": "Học cách xây dựng những thói quen tích cực qua cuốn sách này.",
+            "hashtags": "Cuon-sach-ren-luyen-thoi-quen-tot",
+            "category": "BOOK"
+        },
+        {
+            "id": 19,
+            "idContent": 2,
+            "imgArticle": "/images/book9.webp",
+            "nameArticle": "Những cuốn sách trinh thám đáng đọc nhất",
+            "description": "Danh sách những tác phẩm trinh thám hấp dẫn không thể bỏ lỡ.",
+            "hashtags": "Nhung-cuon-sach-trinh-tham-dang-doc",
+            "category": "BOOK"
+        },
+        {
+            "id": 20,
+            "idContent": 1,
+            "imgArticle": "/images/book10.webp",
+            "nameArticle": "Sách self-help có thể thay đổi cuộc đời bạn",
+            "description": "Những cuốn sách self-help nổi bật giúp bạn cải thiện bản thân và phát triển kỹ năng sống.",
+            "hashtags": "Sach-self-help-thay-doi-cuoc-doi",
+            "category": "BOOK"
+        },
+        {
+            "id": 21,
+            "idContent": 2,
+            "imgArticle": "/images/business_1.webp",
+            "nameArticle": "Thị trường chứng khoán bật tăng mạnh mẽ",
+            "description": "Chỉ số VN-Index tăng mạnh sau chuỗi ngày giảm điểm, nhà đầu tư phấn khởi.",
+            "hashtags": "thi-truong-chung-khoan-bat-tang",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 22,
+            "idContent": 1,
+            "imgArticle": "/images/business_2.webp",
+            "nameArticle": "Startup Việt gọi vốn thành công 10 triệu USD",
+            "description": "Một startup công nghệ của Việt Nam vừa kêu gọi thành công số vốn khủng từ quỹ đầu tư nước ngoài.",
+            "hashtags": "startup-viet-goi-von-10-trieu-usd",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 23,
+            "idContent": 2,
+            "imgArticle": "/images/business_3.webp",
+            "nameArticle": "Doanh nghiệp bán lẻ gặp khó khăn trong quý đầu năm",
+            "description": "Ngành bán lẻ đang chịu áp lực lớn khi sức mua giảm sút.",
+            "hashtags": "doanh-nghiep-ban-le-gap-kho",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 24,
+            "idContent": 1,
+            "imgArticle": "/images/business_4.webp",
+            "nameArticle": "Giá vàng tiếp tục biến động mạnh",
+            "description": "Giá vàng trong nước và thế giới có xu hướng tăng nhẹ trong những ngày qua.",
+            "hashtags": "gia-vang-tiep-tuc-bien-dong",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 25,
+            "idContent": 2,
+            "imgArticle": "/images/business_5.webp",
+            "nameArticle": "Bất động sản công nghiệp thu hút vốn đầu tư",
+            "description": "Các khu công nghiệp đang là điểm sáng trong lĩnh vực bất động sản năm nay.",
+            "hashtags": "bat-dong-san-cong-nghiep",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 26,
+            "idContent": 1,
+            "imgArticle": "/images/business_6.webp",
+            "nameArticle": "Lãi suất ngân hàng có xu hướng giảm nhẹ",
+            "description": "Các ngân hàng điều chỉnh giảm lãi suất nhằm kích thích tín dụng.",
+            "hashtags": "lai-suat-ngan-hang-giam",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 27,
+            "idContent": 2,
+            "imgArticle": "/images/business_7.webp",
+            "nameArticle": "Doanh nghiệp Việt mở rộng thị trường quốc tế",
+            "description": "Nhiều công ty Việt đang tìm kiếm cơ hội mở rộng ra nước ngoài.",
+            "hashtags": "doanh-nghiep-viet-mo-rong-quoc-te",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 28,
+            "idContent": 1,
+            "imgArticle": "/images/business_8.webp",
+            "nameArticle": "Thương mại điện tử tăng trưởng vượt bậc",
+            "description": "Doanh thu từ thương mại điện tử tại Việt Nam dự báo đạt kỷ lục trong năm nay.",
+            "hashtags": "thuong-mai-dien-tu-tang-truong",
+            "category": "KINH DOANH"
+        },
+        {
+            "id": 29,
+            "idContent": 2,
+            "imgArticle": "/images/lifestyle_1.webp",
+            "nameArticle": "Xu hướng thời trang hè 2025",
+            "description": "Những phong cách thời trang đang lên ngôi trong mùa hè năm nay.",
+            "hashtags": "xu-huong-thoi-trang-he-2025",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 30,
+            "idContent": 1,
+            "imgArticle": "/images/lifestyle_2.webp",
+            "nameArticle": "Cách sống tối giản giúp bạn hạnh phúc hơn",
+            "description": "Lối sống tối giản không chỉ giúp tiết kiệm mà còn mang lại hạnh phúc bền vững.",
+            "hashtags": "song-toi-gian-hanh-phuc",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 31,
+            "idContent": 1,
+            "imgArticle": "/images/lifestyle_3.webp",
+            "nameArticle": "Thực phẩm giúp trẻ hóa làn da",
+            "description": "Những loại thực phẩm giàu dinh dưỡng giúp duy trì làn da căng mịn.",
+            "hashtags": "thuc-pham-tre-hoa-lan-da",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 32,
+            "idContent": 2,
+            "imgArticle": "/images/lifestyle_4.webp",
+            "nameArticle": "Bí quyết ngủ ngon cho dân văn phòng",
+            "description": "Mẹo giúp dân văn phòng cải thiện giấc ngủ và tăng năng suất làm việc.",
+            "hashtags": "bi-quyet-ngu-ngon",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 33,
+            "idContent": 1,
+            "imgArticle": "/images/lifestyle_5.webp",
+            "nameArticle": "Top 5 điểm đến lý tưởng cho kỳ nghỉ hè",
+            "description": "Những địa điểm du lịch hấp dẫn giúp bạn tận hưởng kỳ nghỉ trọn vẹn.",
+            "hashtags": "diem-den-ky-nghi-he",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 34,
+            "idContent": 2,
+            "imgArticle": "/images/lifestyle_6.webp",
+            "nameArticle": "Làm thế nào để duy trì thói quen tập thể dục?",
+            "description": "Các mẹo đơn giản giúp bạn giữ vững động lực tập luyện mỗi ngày.",
+            "hashtags": "duy-tri-thoi-quen-tap-the-duc",
+            "category": "LIFESTYLE"
+        },
+        {
+            "id": 35,
+            "idContent": 1,
+            "imgArticle": "/images/lifestyle_7.webp",
+            "nameArticle": "Tầm quan trọng của sức khỏe tinh thần",
+            "description": "Những cách giúp bạn cải thiện và bảo vệ sức khỏe tinh thần.",
+            "hashtags": "suc-khoe-tinh-than",
+            "category": "SỨC KHỎE"
+        },
+        {
+            "id": 36,
+            "idContent": 2,
+            "imgArticle": "/images/lifestyle_8.webp",
+            "nameArticle": "Làm sao để có một buổi sáng tràn đầy năng lượng?",
+            "description": "Những thói quen buổi sáng giúp bạn bắt đầu ngày mới tràn đầy sức sống.",
+            "hashtags": "buoi-sang-nang-luong",
+            "category": "SỨC KHỎE"
+        },
+        {
+            "id": 37,
+            "idContent": 1,
+            "imgArticle": "/images/magazine_1.webp",
+            "nameArticle": "Tạp chí tháng 3: Xu hướng nghệ thuật đương đại",
+            "description": "Khám phá những xu hướng nghệ thuật nổi bật trong năm 2025.",
+            "hashtags": "nghe-thuat-duong-dai",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 38,
+            "idContent": 2,
+            "imgArticle": "/images/magazine_2.webp",
+            "nameArticle": "Gặp gỡ nhà thiết kế thời trang trẻ tài năng",
+            "description": "Cuộc trò chuyện với nhà thiết kế trẻ đang tạo nên làn sóng mới trong ngành thời trang.",
+            "hashtags": "nha-thiet-ke-thoi-trang",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 39,
+            "idContent": 1,
+            "imgArticle": "/images/magazine_3.webp",
+            "nameArticle": "Bên trong hậu trường một show diễn thời trang",
+            "description": "Những câu chuyện hậu trường ít ai biết về các show diễn thời trang đình đám.",
+            "hashtags": "hau-truong-thoi-trang",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 40,
+            "idContent": 2,
+            "imgArticle": "/images/magazine_4.webp",
+            "nameArticle": "Chuyện đời và sự nghiệp của một siêu mẫu",
+            "description": "Hành trình từ vô danh đến đỉnh cao sự nghiệp của một siêu mẫu nổi tiếng.",
+            "hashtags": "sieu-mau-noi-tieng",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 41,
+            "idContent": 1,
+            "imgArticle": "/images/magazine_5.webp",
+            "nameArticle": "Những cuốn sách truyền cảm hứng đáng đọc",
+            "description": "Danh sách những cuốn sách giúp bạn thay đổi tư duy và cuộc sống.",
+            "hashtags": "sach-truyen-cam-hung",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 42,
+            "idContent": 2,
+            "imgArticle": "/images/magazine_6.webp",
+            "nameArticle": "Hành trình sáng tạo của một nghệ sĩ tranh vẽ",
+            "description": "Bên trong tâm hồn và phong cách sáng tác của một họa sĩ nổi tiếng.",
+            "hashtags": "hanh-trinh-sang-tao",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 43,
+            "idContent": 1,
+            "imgArticle": "/images/magazine_7.webp",
+            "nameArticle": "Cách chọn nước hoa phù hợp với cá tính",
+            "description": "Hướng dẫn chọn nước hoa theo phong cách và tính cách của bạn.",
+            "hashtags": "chon-nuoc-hoa",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 44,
+            "idContent": 2,
+            "imgArticle": "/images/magazine_8.webp",
+            "nameArticle": "Những phong cách trang điểm nổi bật năm 2025",
+            "description": "Cập nhật xu hướng trang điểm được yêu thích nhất năm nay.",
+            "hashtags": "phong-cach-trang-diem",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 45,
+            "idContent": 1,
+            "imgArticle": "/images/magazine_9.webp",
+            "nameArticle": "Ngành công nghiệp điện ảnh: Cơ hội và thách thức",
+            "description": "Những thách thức mà ngành điện ảnh đang đối mặt và cơ hội phát triển trong tương lai.",
+            "hashtags": "cong-nghiep-dien-anh",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 46,
+            "idContent": 1,
+            "imgArticle": "/images/magazine_10.webp",
+            "nameArticle": "Những bộ phim đáng mong chờ trong năm 2025",
+            "description": "Danh sách những bộ phim dự kiến gây bão trong năm nay.",
+            "hashtags": "phim-hay-2025",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 47,
+            "idContent": 2,
+            "imgArticle": "/images/magazine_11.webp",
+            "nameArticle": "10 thương hiệu thời trang xa xỉ hàng đầu thế giới",
+            "description": "Những thương hiệu dẫn đầu trong ngành thời trang xa xỉ.",
+            "hashtags": "thuong-hieu-thoi-trang-xa-xi",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 48,
+            "idContent": 1,
+            "imgArticle": "/images/magazine_12.webp",
+            "nameArticle": "Ngành công nghiệp mỹ phẩm: Xu hướng mới",
+            "description": "Những bước tiến đột phá và xu hướng mới nhất trong ngành mỹ phẩm.",
+            "hashtags": "nganh-cong-nghiep-my-pham",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 49,
+            "idContent": 2,
+            "imgArticle": "/images/magazine_13.webp",
+            "nameArticle": "Tác động của mạng xã hội đến thời trang",
+            "description": "Mạng xã hội đã thay đổi ngành công nghiệp thời trang như thế nào?",
+            "hashtags": "mang-xa-hoi-thoi-trang",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 50,
+            "idContent": 1,
+            "imgArticle": "/images/magazine_14.webp",
+            "nameArticle": "Phong cách sống bền vững trong thời đại số",
+            "description": "Làm thế nào để duy trì lối sống bền vững trong kỷ nguyên công nghệ?",
+            "hashtags": "song-ben-vung",
+            "category": "MAGAZINE"
+        },
+        {
+            "id": 51,
+            "idContent": 2,
+            "imgArticle": "/images/giaitri_1.webp",
+            "nameArticle": "Show diễn giải trí hot nhất tháng 3",
+            "description": "Những show diễn không thể bỏ lỡ trong tháng này.",
+            "hashtags": "giai-tri-thang-3",
+            "category": "GIẢI TRÍ"
+        },
+        {
+            "id": 52,
+            "idContent": 1,
+            "imgArticle": "/images/giaitri_2.webp",
+            "nameArticle": "Sao Việt và những khoảnh khắc đáng nhớ",
+            "description": "Những khoảnh khắc ấn tượng của sao Việt trong tuần qua.",
+            "hashtags": "sao-viet",
+            "category": "GIẢI TRÍ"
+        },
+        {
+            "id": 53,
+            "idContent": 2,
+            "imgArticle": "/images/giaitri_3.webp",
+            "nameArticle": "Những bộ phim đáng mong chờ trong năm 2025",
+            "description": "Danh sách phim hot nhất sẽ ra mắt trong năm nay.",
+            "hashtags": "phim-hay-2025",
+            "category": "GIẢI TRÍ"
+        },
+        {
+            "id": 54,
+            "idContent": 1,
+            "imgArticle": "/images/thethao_1.webp",
+            "nameArticle": "Đội bóng nào sẽ vô địch mùa giải năm nay?",
+            "description": "Phân tích sức mạnh của các ứng viên vô địch.",
+            "hashtags": "bong-da",
+            "category": "THỂ THAO"
+        },
+        {
+            "id": 55,
+            "idContent": 2,
+            "imgArticle": "/images/thethao_2.webp",
+            "nameArticle": "Những khoảnh khắc thể thao ấn tượng",
+            "description": "Cùng nhìn lại những khoảnh khắc đáng nhớ trong thể thao.",
+            "hashtags": "the-thao",
+            "category": "THỂ THAO"
+        },
+        {
+            "id": 56,
+            "idContent": 1,
+            "imgArticle": "/images/thethao_3.webp",
+            "nameArticle": "Cầu thủ trẻ nào đang gây sốt tại Châu Âu?",
+            "description": "Những tài năng trẻ đang được săn đón tại các CLB hàng đầu.",
+            "hashtags": "cau-thu-tre",
+            "category": "THỂ THAO"
+        },
+        {
+            "id": 57,
+            "idContent": 2,
+            "imgArticle": "/images/xahoi_1.webp",
+            "nameArticle": "Xu hướng sống xanh trong giới trẻ",
+            "description": "Giới trẻ ngày nay đang theo đuổi phong cách sống xanh như thế nào?",
+            "hashtags": "song-xanh",
+            "category": "XÃ HỘI"
+        },
+        {
+            "id": 58,
+            "idContent": 1,
+            "imgArticle": "/images/xahoi_2.webp",
+            "nameArticle": "Sự thay đổi trong lối sống đô thị",
+            "description": "Những thay đổi đáng chú ý trong phong cách sống của người dân thành phố.",
+            "hashtags": "doi-song-do-thi",
+            "category": "XÃ HỘI"
+        },
+        {
+            "id": 59,
+            "idContent": 2,
+            "imgArticle": "/images/xahoi_3.webp",
+            "nameArticle": "Câu chuyện về những người hùng thầm lặng",
+            "description": "Những con người thầm lặng đóng góp cho cộng đồng mà bạn chưa biết đến.",
+            "hashtags": "nguoi-hung-tham-lang",
+            "category": "XÃ HỘI"
+        },
+        {
+            "id": 60,
+            "idContent": 1,
+            "imgArticle": "/images/phapluat_1.webp",
+            "nameArticle": "Những vụ án nổi bật trong tháng qua",
+            "description": "Điểm lại những vụ án gây xôn xao dư luận thời gian qua.",
+            "hashtags": "vu-an-noi-bat",
+            "category": "PHÁP LUẬT"
+        },
+        {
+            "id": 61,
+            "idContent": 1,
+            "imgArticle": "/images/phapluat_2.webp",
+            "nameArticle": "Các điều luật mới có hiệu lực từ năm 2025",
+            "description": "Những thay đổi quan trọng trong luật pháp mà bạn cần biết.",
+            "hashtags": "luat-moi",
+            "category": "PHÁP LUẬT"
+        },
+        {
+            "id": 62,
+            "idContent": 2,
+            "imgArticle": "/images/phapluat_3.webp",
+            "nameArticle": "Làm sao để tránh các rủi ro pháp lý?",
+            "description": "Những lưu ý quan trọng để bảo vệ quyền lợi pháp lý của bạn.",
+            "hashtags": "rủi-ro-phap-ly",
+            "category": "PHÁP LUẬT"
+        },
+        {
+            "id": 63,
+            "idContent": 1,
+            "imgArticle": "/images/xuatban_1.webp",
+            "nameArticle": "Những tựa sách bán chạy nhất tháng 3",
+            "description": "Danh sách những cuốn sách đang được độc giả săn đón.",
+            "hashtags": "sach-ban-chay",
+            "category": "XUẤT BẢN"
+        },
+        {
+            "id": 64,
+            "idContent": 2,
+            "imgArticle": "/images/xuatban_2.webp",
+            "nameArticle": "Xu hướng xuất bản sách trong năm nay",
+            "description": "Những thay đổi đáng chú ý trong ngành xuất bản sách.",
+            "hashtags": "xuat-ban",
+            "category": "XUẤT BẢN"
+        },
+        {
+            "id": 65,
+            "idContent": 1,
+            "imgArticle": "/images/xuatban_3.webp",
+            "nameArticle": "Tác giả nào đang được chú ý nhất?",
+            "description": "Những tác giả đang được cộng đồng yêu sách quan tâm.",
+            "hashtags": "tac-gia-noi-bat",
+            "category": "XUẤT BẢN"
+        },
+        {
+            "id": 66,
+            "idContent": 2,
+            "imgArticle": "/images/thegioisach_1.webp",
+            "nameArticle": "Những cuốn sách đáng đọc trong năm 2025",
+            "description": "Danh sách những cuốn sách hay không thể bỏ qua.",
+            "hashtags": "sach-hay",
+            "category": "THẾ GIỚI SÁCH"
+        },
+        {
+            "id": 67,
+            "idContent": 1,
+            "imgArticle": "/images/thegioisach_2.webp",
+            "nameArticle": "Tại sao sách giấy vẫn chưa bị thay thế?",
+            "description": "Dù có nhiều công nghệ mới, sách giấy vẫn có chỗ đứng riêng.",
+            "hashtags": "sach-giay",
+            "category": "THẾ GIỚI SÁCH"
+        },
+        {
+            "id": 68,
+            "idContent": 2,
+            "imgArticle": "/images/thegioisach_3.webp",
+            "nameArticle": "Những cuốn sách truyền cảm hứng mạnh mẽ",
+            "description": "Những cuốn sách giúp thay đổi cuộc sống của bạn.",
+            "hashtags": "sach-truyen-cam-hung",
+            "category": "THẾ GIỚI SÁCH"
+        },
+        {
+            "id": 69,
+            "idContent": 1,
+            "imgArticle": "/images/giaoduc_1.webp",
+            "nameArticle": "Giáo dục trực tuyến đang thay đổi thế nào?",
+            "description": "Những xu hướng mới nhất trong giáo dục trực tuyến.",
+            "hashtags": "giao-duc-truc-tuyen",
+            "category": "GIÁO DỤC"
+        },
+        {
+            "id": 70,
+            "idContent": 2,
+            "imgArticle": "/images/giaoduc_2.webp",
+            "nameArticle": "Những kỹ năng cần thiết trong thời đại AI",
+            "description": "Các kỹ năng quan trọng giúp bạn không bị tụt hậu trong kỷ nguyên số.",
+            "hashtags": "ky-nang-ai",
+            "category": "GIÁO DỤC"
+        },
+        {
+            "id": 71,
+            "idContent": 1,
+            "imgArticle": "/images/giaoduc_3.webp",
+            "nameArticle": "Học sinh đang thích nghi với mô hình học tập mới",
+            "description": "Mô hình giáo dục thay đổi ra sao trong những năm gần đây?",
+            "hashtags": "hoc-sinh-hoc-tap",
+            "category": "GIÁO DỤC"
+        },
+        {
+            "id": 72,
+            "idContent": 2,
+            "imgArticle": "/images/xe_1.webp",
+            "nameArticle": "Những mẫu xe đáng mua nhất năm 2025",
+            "description": "Top những mẫu xe hơi được đánh giá cao.",
+            "hashtags": "mau-xe-2025",
+            "category": "XE"
+        },
+        {
+            "id": 73,
+            "idContent": 1,
+            "imgArticle": "/images/xe_2.webp",
+            "nameArticle": "Xe điện có thực sự là xu hướng tất yếu?",
+            "description": "Những tranh luận xung quanh sự phát triển của xe điện.",
+            "hashtags": "xe-dien",
+            "category": "XE"
+        },
+        {
+            "id": 74,
+            "idContent": 2,
+            "imgArticle": "/images/xe_3.webp",
+            "nameArticle": "So sánh xe chạy xăng và xe điện",
+            "description": "Liệu xe điện có thực sự thay thế hoàn toàn xe xăng?",
+            "hashtags": "so-sanh-xe",
+            "category": "XE"
+        },
+        {
+            "id": 75,
+            "idContent": 1,
+            "imgArticle": "/images/congnghe1.webp",
+            "nameArticle": "AI đang thay đổi cách con người làm việc",
+            "description": "Trí tuệ nhân tạo đang cách mạng hóa thị trường lao động với nhiều công cụ tự động hóa.",
+            "hashtags": "AI-cong-nghe",
+            "category": "CÔNG NGHỆ"
+        },
+        {
+            "id": 76,
+            "idContent": 2,
+            "imgArticle": "/images/congnghe2.webp",
+            "nameArticle": "Công nghệ 5G mở ra kỷ nguyên mới",
+            "description": "Tốc độ kết nối cực nhanh của 5G giúp tăng cường trải nghiệm thực tế ảo, AI và IoT.",
+            "hashtags": "5G-tuong-lai",
+            "category": "CÔNG NGHỆ"
+        },
+        {
+            "id": 77,
+            "idContent": 1,
+            "imgArticle": "/images/congnghe3.webp",
+            "nameArticle": "Blockchain không chỉ dành cho tiền điện tử",
+            "description": "Công nghệ Blockchain đang được áp dụng trong nhiều lĩnh vực khác nhau ngoài tài chính.",
+            "hashtags": "blockchain-ung-dung",
+            "category": "CÔNG NGHỆ"
+        },
+        {
+            "id": 78,
+            "idContent": 2,
+            "imgArticle": "/images/suckhoe1.webp",
+            "nameArticle": "Lợi ích của việc ngủ đủ giấc",
+            "description": "Giấc ngủ đóng vai trò quan trọng trong sức khỏe thể chất và tinh thần.",
+            "hashtags": "suc-khoe-giac-ngu",
+            "category": "SỨC KHỎE"
+        },
+        {
+            "id": 79,
+            "idContent": 1,
+            "imgArticle": "/images/suckhoe2.webp",
+            "nameArticle": "Thực phẩm giúp tăng cường hệ miễn dịch",
+            "description": "Những thực phẩm giàu vitamin và khoáng chất có thể giúp cơ thể chống lại bệnh tật.",
+            "hashtags": "dinh-duong-khoe-manh",
+            "category": "SỨC KHỎE"
+        },
+        {
+            "id": 80,
+            "idContent": 2,
+            "imgArticle": "/images/suckhoe3.webp",
+            "nameArticle": "Tập thể dục có thực sự giúp bạn sống lâu hơn?",
+            "description": "Nghiên cứu cho thấy việc tập luyện đều đặn giúp kéo dài tuổi thọ và tăng cường sức khỏe.",
+            "hashtags": "tap-the-duc-song-lau",
+            "category": "SỨC KHỎE"
+        },
+        {
+            "id": 81,
+            "idContent": 1,
+            "imgArticle": "/images/doisong1.webp",
+            "nameArticle": "Những thói quen giúp bạn thành công hơn",
+            "description": "Việc xây dựng thói quen tốt có thể giúp bạn đạt được mục tiêu dễ dàng hơn.",
+            "hashtags": "doi-song-thanh-cong",
+            "category": "ĐỜI SỐNG"
+        },
+        {
+            "id": 82,
+            "idContent": 2,
+            "imgArticle": "/images/doisong2.webp",
+            "nameArticle": "Làm thế nào để cân bằng giữa công việc và cuộc sống?",
+            "description": "Bí quyết giúp bạn duy trì một cuộc sống hài hòa mà không bị stress vì công việc.",
+            "hashtags": "cong-viec-va-cuoc-song",
+            "category": "ĐỜI SỐNG"
+        },
+        {
+            "id": 83,
+            "idContent": 1,
+            "imgArticle": "/images/doisong3.webp",
+            "nameArticle": "Bí quyết tiết kiệm tiền hiệu quả",
+            "description": "Những mẹo giúp bạn quản lý tài chính cá nhân tốt hơn và tiết kiệm nhiều hơn.",
+            "hashtags": "quan-ly-tai-chinh",
+            "category": "ĐỜI SỐNG"
+        },
+        {
+            "id": 84,
+            "idContent": 2,
+            "imgArticle": "/images/dulich1.webp",
+            "nameArticle": "Những địa điểm du lịch đẹp nhất Việt Nam",
+            "description": "Khám phá những địa điểm du lịch nổi bật tại Việt Nam từ Bắc chí Nam.",
+            "hashtags": "du-lich-viet-nam",
+            "category": "DU LỊCH"
+        },
+        {
+            "id": 85,
+            "idContent": 1,
+            "imgArticle": "/images/dulich2.webp",
+            "nameArticle": "Chuẩn bị gì khi đi du lịch nước ngoài?",
+            "description": "Những thứ cần chuẩn bị trước khi đi du lịch quốc tế để có một chuyến đi suôn sẻ.",
+            "hashtags": "kinh-nghiem-du-lich",
+            "category": "DU LỊCH"
+        },
+        {
+            "id": 86,
+            "idContent": 2,
+            "imgArticle": "/images/dulich3.webp",
+            "nameArticle": "Du lịch tiết kiệm - Làm sao để không vượt quá ngân sách?",
+            "description": "Những mẹo giúp bạn tận hưởng chuyến đi mà không tốn quá nhiều tiền.",
+            "hashtags": "du-lich-tiet-kiem",
+            "category": "DU LỊCH"
+        },
+        {
+            "id": 87,
+            "idContent": 1,
+            "imgArticle": "/images/giaitri1.webp",
+            "nameArticle": "Top 5 bộ phim đáng xem nhất năm nay",
+            "description": "Danh sách những bộ phim được đánh giá cao và đáng xem nhất trong năm.",
+            "hashtags": "phim-hay-nam-nay",
+            "category": "GIẢI TRÍ"
+        },
+        {
+            "id": 88,
+            "idContent": 2,
+            "imgArticle": "/images/giaitri2.webp",
+            "nameArticle": "Những xu hướng âm nhạc đang thống trị thị trường",
+            "description": "Khám phá những xu hướng âm nhạc mới nhất và đang lên trên toàn cầu.",
+            "hashtags": "am-nhac-moi",
+            "category": "GIẢI TRÍ"
+        },
+        {
+            "id": 89,
+            "idContent": 1,
+            "imgArticle": "/images/giaitri3.webp",
+            "nameArticle": "Game online nào đang hot nhất hiện nay?",
+            "description": "Danh sách những tựa game online đang thu hút đông đảo người chơi.",
+            "hashtags": "game-hot-nhat",
+            "category": "GIẢI TRÍ"
+        },
+        {
+            "id": 90,
+            "idContent": 2,
+            "imgArticle": "/images/thethao1.webp",
+            "nameArticle": "Bóng đá Việt Nam và giấc mơ World Cup",
+            "description": "Liệu đội tuyển Việt Nam có thể tạo nên kỳ tích tại đấu trường quốc tế?",
+            "hashtags": "bong-da-viet-nam",
+            "category": "THỂ THAO"
+        },
+        {
+            "id": 91,
+            "idContent": 1,
+            "imgArticle": "/images/thethao2.webp",
+            "nameArticle": "Những huyền thoại của làng quần vợt thế giới",
+            "description": "Những tay vợt xuất sắc nhất lịch sử quần vợt và những chiến thắng huyền thoại.",
+            "hashtags": "huyen-thoai-quan-vot",
+            "category": "THỂ THAO"
+        },
+        {
+            "id": 92,
+            "idContent": 2,
+            "imgArticle": "/images/thethao3.webp",
+            "nameArticle": "Công nghệ VAR và tác động đến bóng đá hiện đại",
+            "description": "Hệ thống VAR đã làm thay đổi cách trọng tài điều hành trận đấu như thế nào?",
+            "hashtags": "cong-nghe-VAR",
+            "category": "THỂ THAO"
+        },
+        {
+            "id": 93,
+            "idContent": 1,
+            "imgArticle": "/images/thegioi1.webp",
+            "nameArticle": "Cuộc chạy đua không gian giữa các cường quốc",
+            "description": "Mỹ, Trung Quốc và Nga đang cạnh tranh trong lĩnh vực không gian như thế nào?",
+            "hashtags": "cuoc-dua-khong-gian",
+            "category": "THẾ GIỚI"
+        },
+        {
+            "id": 94,
+            "idContent": 2,
+            "imgArticle": "/images/thegioi2.webp",
+            "nameArticle": "Kinh tế toàn cầu sau đại dịch",
+            "description": "Những thách thức và cơ hội cho nền kinh tế thế giới trong giai đoạn hậu COVID-19.",
+            "hashtags": "kinh-te-toan-cau",
+            "category": "THẾ GIỚI"
+        },
+        {
+            "id": 95,
+            "idContent": 1,
+            "imgArticle": "/images/thegioi3.webp",
+            "nameArticle": "Xu hướng chính trị thế giới năm nay",
+            "description": "Những sự kiện chính trị quan trọng có thể ảnh hưởng đến toàn cầu.",
+            "hashtags": "chinh-tri-the-gioi",
+            "category": "THẾ GIỚI"
+        },
+        {
+            "id": 96,
+            "idContent": 2,
+            "imgArticle": "/images/tacgia1.webp",
+            "nameArticle": "Nhà văn trẻ và những sáng tác đáng chú ý",
+            "description": "Những tác giả trẻ đang làm thay đổi nền văn học hiện đại.",
+            "hashtags": "tac-gia-tre",
+            "category": "TÁC GIẢ"
+        },
+        {
+            "id": 97,
+            "idContent": 1,
+            "imgArticle": "/images/tacgia2.webp",
+            "nameArticle": "Cuộc đời và sự nghiệp của Haruki Murakami",
+            "description": "Những tác phẩm nổi bật của Haruki Murakami và tầm ảnh hưởng của ông.",
+            "hashtags": "haruki-murakami",
+            "category": "TÁC GIẢ"
+        },
+        {
+            "id": 98,
+            "idContent": 2,
+            "imgArticle": "/images/tacgia3.webp",
+            "nameArticle": "Những nhà văn Việt Nam nổi bật hiện nay",
+            "description": "Những tác giả có tầm ảnh hưởng lớn trong nền văn học Việt Nam hiện đại.",
+            "hashtags": "tac-gia-viet-nam",
+            "category": "TÁC GIẢ"
+        },
+        {
+            "id": 99,
+            "idContent": 1,
+            "imgArticle": "/images/sach1.webp",
+            "nameArticle": "Cuốn sách thay đổi cuộc đời tôi",
+            "description": "Một câu chuyện đầy cảm hứng về một cuốn sách làm thay đổi suy nghĩ và cuộc sống.",
+            "hashtags": "sach-truyen-cam-hung",
+            "category": "CUỐN SÁCH TÔI ĐỌC"
+        },
+        {
+            "id": 100,
+            "idContent": 2,
+            "imgArticle": "/images/sach2.webp",
+            "nameArticle": "Top 5 cuốn sách đáng đọc năm nay",
+            "description": "Danh sách những cuốn sách được đánh giá cao nhất trong năm.",
+            "hashtags": "sach-hay-nam-nay",
+            "category": "CUỐN SÁCH TÔI ĐỌC"
+        },
+        {
+            "id": 101,
+            "idContent": 1,
+            "imgArticle": "/images/sach3.webp",
+            "nameArticle": "Sách kinh doanh giúp bạn thành công hơn",
+            "description": "Những cuốn sách về kinh doanh, tài chính mà mọi doanh nhân nên đọc.",
+            "hashtags": "sach-kinh-doanh",
+            "category": "CUỐN SÁCH TÔI ĐỌC"
+        },
+        {
+            "id": 102,
+            "idContent": 2,
+            "imgArticle": "/images/vanhoa1.webp",
+            "nameArticle": "Sự khác biệt giữa văn hóa Đông và Tây",
+            "description": "Những điểm khác biệt thú vị trong cách sống và tư duy giữa phương Đông và phương Tây.",
+            "hashtags": "van-hoa-dong-tay",
+            "category": "VĂN HÓA"
+        },
+        {
+            "id": 103,
+            "idContent": 1,
+            "imgArticle": "/images/vanhoa2.webp",
+            "nameArticle": "Bảo tồn và phát triển văn hóa truyền thống",
+            "description": "Làm sao để giữ gìn bản sắc văn hóa trong thời đại công nghệ?",
+            "hashtags": "bao-ton-van-hoa",
+            "category": "VĂN HÓA"
+        },
+        {
+            "id": 104,
+            "idContent": 2,
+            "imgArticle": "/images/vanhoa3.webp",
+            "nameArticle": "Những lễ hội đặc sắc trên thế giới",
+            "description": "Khám phá những lễ hội độc đáo và đầy màu sắc trên khắp thế giới.",
+            "hashtags": "le-hoi-the-gioi",
+            "category": "VĂN HÓA"
+        },
+        {
+            "id": 105,
+            "idContent": 1,
+            "imgArticle": "/images/tdn1.webp",
+            "nameArticle": "TDN - Xu hướng mới trong thế giới công nghệ",
+            "description": "TDN là gì và tại sao nó lại trở thành một xu hướng quan trọng?",
+            "hashtags": "TDN-xu-huong",
+            "category": "TDN"
+        },
+        {
+            "id": 106,
+            "idContent": 2,
+            "imgArticle": "/images/tdn2.webp",
+            "nameArticle": "Ứng dụng của TDN trong cuộc sống hàng ngày",
+            "description": "TDN có thể giúp cải thiện công việc và cuộc sống như thế nào?",
+            "hashtags": "TDN-ung-dung",
+            "category": "TDN"
+        },
+        {
+            "id": 107,
+            "idContent": 1,
+            "imgArticle": "/images/tdn3.webp",
+            "nameArticle": "Những công ty tiên phong trong công nghệ TDN",
+            "description": "Những công ty nào đang dẫn đầu trong lĩnh vực TDN?",
+            "hashtags": "cong-ty-TDN",
+            "category": "TDN"
+        },
+        {
+            "id": 108,
+            "idContent": 2,
+            "imgArticle": "/images/vanhoahoc1.webp",
+            "nameArticle": "Tầm quan trọng của văn hóa học trong xã hội hiện đại",
+            "description": "Văn hóa học giúp chúng ta hiểu sâu hơn về sự phát triển và biến đổi của xã hội.",
+            "hashtags": "tam-quan-trong-van-hoa-hoc",
+            "category": "VĂN HÓA HỌC"
+        },
+        {
+            "id": 109,
+            "idContent": 1,
+            "imgArticle": "/images/vanhoahoc2.webp",
+            "nameArticle": "Những trường phái văn hóa học nổi bật",
+            "description": "Tìm hiểu về các trường phái văn hóa học và ảnh hưởng của chúng.",
+            "hashtags": "truong-phai-van-hoa-hoc",
+            "category": "VĂN HÓA HỌC"
+        },
+        {
+            "id": 110,
+            "idContent": 2,
+            "imgArticle": "/images/vanhoahoc3.webp",
+            "nameArticle": "Văn hóa học và sự giao thoa văn hóa trong toàn cầu hóa",
+            "description": "Toàn cầu hóa đã thay đổi cách chúng ta nhìn nhận văn hóa học như thế nào?",
+            "hashtags": "giao-thoa-van-hoa",
+            "category": "VĂN HÓA HỌC"
+        },
+        {
+            "id": 111,
+            "idContent": 1,
+            "imgArticle": "/images/thethao21.webp",
+            "nameArticle": "Những ngôi sao thể thao có ảnh hưởng nhất thế giới",
+            "description": "Những vận động viên không chỉ xuất sắc trên sân mà còn có tầm ảnh hưởng lớn trong xã hội.",
+            "hashtags": "ngoi-sao-the-thao",
+            "category": "THỂ THAO 2"
+        },
+        {
+            "id": 112,
+            "idContent": 2,
+            "imgArticle": "/images/thethao22.webp",
+            "nameArticle": "Thể thao điện tử và sự phát triển mạnh mẽ",
+            "description": "E-Sports đang dần trở thành một ngành công nghiệp tỷ đô trên thế giới.",
+            "hashtags": "the-thao-dien-tu",
+            "category": "THỂ THAO 2"
+        },
+        {
+            "id": 113,
+            "idContent": 1,
+            "imgArticle": "/images/thethao23.webp",
+            "nameArticle": "Chế độ dinh dưỡng dành cho vận động viên chuyên nghiệp",
+            "description": "Bí quyết dinh dưỡng giúp vận động viên đạt phong độ cao nhất.",
+            "hashtags": "dinh-duong-the-thao",
+            "category": "THỂ THAO 2"
+        }
+    ],
+    "sidebars": [
+        {
+            "id": 1,
+            "title": "Xuất bản",
+            "href": "/xuat-ban"
+        },
+        {
+            "id": 2,
+            "title": "Tác giả",
+            "href": "/tac-gia"
+        },
+        {
+            "id": 3,
+            "title": "Thế giới Sách",
+            "href": "/the-gioi-sach"
+        },
+        {
+            "id": 4,
+            "title": "Cuốn sách tôi đọc",
+            "href": "/cuon-sach-cua-toi"
+        },
+        {
+            "id": 5,
+            "title": "Nghiên cứu xuất bản",
+            "href": "/nghien-cuu-xuat-ban"
+        },
+        {
+            "id": 6,
+            "title": "Kinh Doanh",
+            "href": "/kinh-doanh"
+        },
+        {
+            "id": 7,
+            "title": "Sức khỏe",
+            "href": "/suc-khoe"
+        },
+        {
+            "id": 8,
+            "title": "Thể thao",
+            "href": "/the-thao"
+        },
+        {
+            "id": 9,
+            "title": "Du lịch",
+            "href": "/du-lich"
+        },
+        {
+            "id": 10,
+            "title": "Văn hóa học",
+            "href": "/van-hoa-hoc"
+        },
+        {
+            "id": 11,
+            "title": "Pháp luật",
+            "href": "/phap-luat"
+        },
+        {
+            "id": 12,
+            "title": "Công nghệ",
+            "href": "/cong-nghe"
+        },
+        {
+            "id": 13,
+            "title": "Giải trí",
+            "href": "/giai-tri"
+        },
+        {
+            "id": 14,
+            "title": "Lifestyle",
+            "href": "/lifestyle"
+        },
+        {
+            "id": 15,
+            "title": "Xã hội",
+            "href": "/xa-hoi"
+        },
+        {
+            "id": 16,
+            "title": "Thế giới",
+            "href": "/the-gioi"
+        },
+        {
+            "id": 17,
+            "title": "Đời sống",
+            "href": "/doi-song"
+        },
+        {
+            "id": 18,
+            "title": "Xe",
+            "href": "/xe"
+        },
+        {
+            "id": 19,
+            "title": "Cải chính",
+            "href": "/cai-chinh"
+        },
+        {
+            "id": 20,
+            "title": "Giáo dục",
+            "href": "/giao-duc"
+        }
+    ],
+    "multimedias": [
+        {
+            "id": 1,
+            "title": "VIDEO",
+            "href": "/video"
+        },
+        {
+            "id": 2,
+            "title": "PODCAST",
+            "href": "/podcast"
+        },
+        {
+            "id": 3,
+            "title": "LONGFORM",
+            "href": "/longform"
+        },
+        {
+            "id": 4,
+            "title": "STORY",
+            "href": "/story"
+        },
+        {
+            "id": 5,
+            "title": "QUIZZ",
+            "href": "/quizz"
+        }
+    ],
+    "introductions": [
+        {
+            "id": 1,
+            "imgIntro": "../Images/intr1.png"
+        },
+        {
+            "id": 2,
+            "imgIntro": "../Images/intr2.png"
+        },
+        {
+            "id": 3,
+            "imgIntro": "../Images/intr2.png"
+        },
+        {
+            "id": 4,
+            "imgIntro": "../Images/banner.png"
+        }
+    ],
+    "podcasts": [
+        {
+            "id": 1,
+            "namePodcast": "Thu Trang: 'Tôi tham vọng có phim mấy trăm tỉ đồng'",
+            "imgPodcast": "https://photo.znews.vn/w480/Uploaded/yqdxwpujv/2025_01_27/thumb_znews.jpg"
+        },
+        {
+            "id": 2,
+            "namePodcast": "BAT Việt Nam: phát triển bền vững không phải đánh đổi lợi ích kinh tế",
+            "imgPodcast": "https://photo.znews.vn/w480/Uploaded/wyhktpu/2025_01_06/thumb_znews_1_.jpg"
+        },
+        {
+            "id": 3,
+            "namePodcast": "Lãnh đạo Shopee: 'cạnh tranh là cần thiết'",
+            "imgPodcast": "https://photo.znews.vn/w480/Uploaded/wyhktpu/2025_01_06/thumb_znews_1_.jpg"
+        },
+        {
+            "id": 4,
+            "namePodcast": "Lãnh đạo UOB: '3-5 năm tới rất quan trọng với Viêt Nam",
+            "imgPodcast": "https://photo.znews.vn/w480/Uploaded/wyhktpu/2025_01_06/thumb_znews_1_.jpg"
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "src": "/Videos/v1.mp4",
+            "nameVideo": "Video 1",
+            "imgVideo": "../Images/OS76P6DBHRNI5PFHXJEY4R6D7E_11zon.webp",
+            "categoryVideo": "XÃ HỘI"
+        },
+        {
+            "id": 2,
+            "src": "/Videos/v2.mp4",
+            "nameVideo": "Video 2",
+            "imgVideo": "../Images/OS76P6DBHRNI5PFHXJEY4R6D7E_11zon.webp",
+            "categoryVideo": "XÃ HỘI"
+        },
+        {
+            "id": 3,
+            "src": "/Videos/v3.mp4",
+            "nameVideo": "Video 3",
+            "imgVideo": "../Images/OS76P6DBHRNI5PFHXJEY4R6D7E_11zon.webp",
+            "categoryVideo": "XÃ HỘI"
+        },
+        {
+            "id": 4,
+            "src": "/Videos/v1.mp4",
+            "nameVideo": "Video 4",
+            "imgVideo": "../Images/OS76P6DBHRNI5PFHXJEY4R6D7E_11zon.webp",
+            "categoryVideo": "XÃ HỘI"
+        },
+        {
+            "id": 5,
+            "src": "/Videos/v2.mp4",
+            "nameVideo": "Video 5",
+            "imgVideo": "../Images/OS76P6DBHRNI5PFHXJEY4R6D7E_11zon.webp",
+            "categoryVideo": "XÃ HỘI"
+        },
+        {
+            "id": 6,
+            "src": "/Videos/v3.mp4",
+            "nameVideo": "Video 6",
+            "imgVideo": "../Images/OS76P6DBHRNI5PFHXJEY4R6D7E_11zon.webp",
+            "categoryVideo": "XÃ HỘI"
+        }
+    ]
+}
