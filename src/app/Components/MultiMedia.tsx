@@ -21,8 +21,8 @@ const MultiMedia = () => {
     <div className='mt-5 w-full flex justify-center'>
       <div className='bg-amber-200 w-3/4 not-lg:w-full'>
         <div className='w-full flex justify-start'>
-          <div className='flex justify-start gap-8 items-start mt-5'>
-            <p className='-ml-10 text-2xl font-bold flex items-center justify-start before:ml-24 before:content-["/"] before:scale-x-200 before:font-bold before:text-red-500 before:mr-2'>MULTIMEDIA</p>
+          <div className='flex justify-start gap-8 items-start mt-5 w-full not-lg:ml-3'>
+            <p className='-ml-10 text-2xl font-bold flex items-center justify-start before:ml-24 before:content-["/"] before:scale-x-200 before:font-bold before:text-red-500 before:mr-2 not-lg:hidden'>MULTIMEDIA</p>
             <a href="video" className='font-bold hover:text-red-600'>VIDEO</a>
             <a href="podcast" className='font-bold hover:text-red-600'>PODCAST</a>
             <a href="longform" className='font-bold hover:text-red-600'>LONGFORM</a>
