@@ -1,4 +1,3 @@
-import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 const Article = () => {
