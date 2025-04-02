@@ -42,59 +42,60 @@ const Header = () => {
     useEffect(() => {
         const underline = localStorage.getItem('underline');
         if (underline) {
-            setUnderline(Number(underline)  || 0)
+            setUnderline(Number(underline) || 0)
         }
     }, []);
     return (
-            <div className={`w-full h-16 flex flex-col items-center shadow-[-10px_-10px_0px_rgba(0,0,0,0.3)] fixed top-0 bg-white z-50 `}>
-                <div className={`w-[68%] flex relative`}>
-                    <a href="/"
-                        onClick={() => {
-                            setUnderline(0);
-                            localStorage.setItem('underline', '0')
-                        }}
-                        className='w-1/2'>
-                        <img src="../Images/logo.png" alt="logo" className='h-full w-54' />
-                    </a>
-                    <div className='flex gap-5 items-center justify-end w-full'>
-                        {categories.slice(2, 10).map((cat) => (
-                            <div key={cat.id} className='h-full flex items-center w-full'>
-                                <a
-                                    onClick={(e) => {
-                                        setUnderline(cat.id);
-                                        localStorage.setItem('underline', cat.id.toString())
-                                        // changePage(cat.id)
-                                    }}
-                                    href={`/category/${cat.href}`}
-                                    className={`cursor-pointer text-xs font-bold hover:underline underline-offset-[16px]
+        <div className={`w-full h-16 flex flex-col items-center shadow-[-10px_-10px_0px_rgba(0,0,0,0.3)] fixed top-0 bg-white z-50 `}>
+            <div className={`w-[68%] flex relative justify-around not-md:w-full`}>
+                <a href="/"
+                    onClick={() => {
+                        setUnderline(0);
+                        localStorage.setItem('underline', '0')
+                    }}
+                    className='w-1/2 '>
+                    <img src="../Images/logo.png" alt="logo" className='h-full w-54' />
+                </a>
+                <div className='flex gap-5 items-center justify-end w-full'>
+                    {categories.slice(2, 10).map((cat) => (
+                        <div key={cat.id} className='h-full flex items-center w-full  not-md:hidden'>
+                            <a
+                                onClick={(e) => {
+                                    setUnderline(cat.id);
+                                    localStorage.setItem('underline', cat.id.toString())
+                                }}
+                                href={`/category/${cat.href}`}
+                                className={`cursor-pointer text-xs font-bold hover:underline underline-offset-[16px]
                                      decoration-[3px] hover:text-blue-500 text-nowrap whitespace-nowrap 
                                      ${underline === cat.id ? 'underline text-blue-500 underline-offset-[16px]' : ''} `}
-                                >{cat.name}
-                                </a>
-                            </div>
-                        ))}
-                    </div>
-                    <a className={`cursor-pointer h-full flex items-center mx-3`} onClick={SAHSidebar}>
-                        {!sidebar ? <HiOutlineDotsHorizontal size={30} className='' /> : <AiOutlineClose size={30} />}
-                    </a>
-                    <div className={`flex items-center`} >
-                        <input type="text"
-                            className={`${!searchBar
-                                ?
-                                (`hidden`)
-                                :
-                                (`absolute border-2 border-black  bg-gray-600 py-1 rounded-md w-56 -right-24 placeholder:text-white pl-3 text-white `)}`}
-                            placeholder='nhập nội dung cần tìm'
-                        />
-                        <IoIosSearch size={30} onClick={SAHSearchBar} className='cursor-pointer h-full z-50 ml-32 -mr-22 relative' />
-                    </div>
+                            >{cat.name}
+                            </a>
+                        </div>
+                    ))}
                 </div>
-                <div className={`transition-all duration-[1s] ${!sidebar ? (`w-full hidden absolute top-10 left-0`) : (`w-full absolute top-16 left-0`)}`}>
-                    <Sidebar />
+                <a className={`cursor-pointer h-full flex items-center px-3 
+                        not-md:w-full
+                        `} onClick={SAHSidebar}>
+                    {!sidebar ? <HiOutlineDotsHorizontal size={30} /> : <AiOutlineClose size={30} />}
+                </a>
+                <div className={`flex items-center not-md:w-full not-md:justify-start`} >
+                    <input type="text"
+                        className={`${!searchBar
+                            ?
+                            (`hidden`)
+                            :
+                            (`absolute border-2 border-black  bg-gray-600 py-1 rounded-md w-56 -right-24 placeholder:text-white pl-3 text-white `)}`}
+                        placeholder='nhập nội dung cần tìm'
+                    />
+                    <IoIosSearch size={30} onClick={SAHSearchBar} className='cursor-pointer h-full z-50 ml-32 -mr-22 relative' />
                 </div>
-                <hr className='text-black h-1 w-full' />
-
             </div>
+            <div className={`transition-all duration-[1s] ${!sidebar ? (`w-full hidden absolute top-10 left-0`) : (`w-full absolute top-16 left-0`)}`}>
+                <Sidebar />
+            </div>
+            <hr className='text-black h-1 w-full' />
+
+        </div>
     )
 }
 

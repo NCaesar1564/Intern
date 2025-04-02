@@ -1,7 +1,6 @@
 import Article from "@/app/Components/Article"
 import ArticleQ3 from "@/app/Components/ArticleQ3"
 import ArticleQ8 from "@/app/Components/ArticleQ8"
-import Banner from "@/app/Components/Banner"
 import Book from "@/app/Components/Book"
 import Footer from "@/app/Components/Footer"
 import Hashtag from "@/app/Components/Hashtag"
@@ -31,8 +30,7 @@ const User = () => {
     }, [])
     return (
         <>
-            {/* <Banner /> */}
-            <div className="">
+            <div>
                 <Header />
             </div>
             <hr className="w-full rounded-3xl" />
@@ -42,26 +40,31 @@ const User = () => {
             </div>
             {categories.slice(0, 1).map((category) => (
                 <div className="flex justify-center" key={category.id}>
-                    <div className="w-3/4 ml-28">
+                    <div className="w-3/4 ml-28 not-md:w-full 
+                    not-md:-ml-0">
                         <Title nameTitle={category.name} />
                     </div>
                 </div>
             ))}
             {categories.slice(0, 1).map((category) => (
-                <div className="flex flex-col items-center w-full ml-8" key={category.id} >
-                    <div className='w-3/4' >
+                <div className="flex flex-col items-center w-full ml-8
+                not-md:ml-0" key={category.id} >
+                    <div className='w-3/4 
+                    not-md:w-full' >
                         <Book />
                     </div>
                 </div>
             ))}
             <div className="min-h-screen">
-                <MultiMedia />
+                <div className="w-full">
+                    <MultiMedia />
+                </div>
                 <div className='flex justify-center mt-8 ml-24 '>
                     <div className="grid grid-cols-11 w-10/12 gap-x-4">
                         <div className="h-[20vh] w-full col-span-8 min-h-fit">
                             <Multimedia2 />
                         </div>
-                        <div className="flex flex-col w-full col-span-3">
+                        <div className="flex flex-col w-full col-span-3 not-lg:hidden">
                             <Introduct />
                         </div>
                     </div>
@@ -77,13 +80,15 @@ const User = () => {
                     </div>
                 ))}
             </div>
-            <Introduct2 />
+            <div className="w-full">
+                <Introduct2 />
+            </div>
             <div className="flex justify-center">
                 <div className="w-[71.5%] bg-black h-[1px]"></div>
             </div>
             <div className="w-full flex justify-center">
                 <div className="w-full flex flex-col items-center">
-                    <div className="grid grid-cols-4 w-[71.5%] gap-5">
+                    <div className="grid grid-cols-4 w-[71.5%] gap-5 not-lg:grid-cols-2">
                         {categories.slice(4, 20).map(categorie => (
                             <div key={categorie.id}>
                                 <ArticleQ3 cname={categorie.name} />

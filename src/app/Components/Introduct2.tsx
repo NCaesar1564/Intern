@@ -22,7 +22,7 @@ const Introduct2 = () => {
     return (
         <div className='my-5 w-full flex justify-center min-h-fit'>
             {introducts.slice(3, 4).map((introduct, index) => (
-                <div key={introduct.id} className={`w-2/5 flex justify-center h-50 bg-yellow-400 cursor-pointer relative ${close ? 'hidden' : ''}`}>
+                <div key={introduct.id} className={`w-2/5 flex justify-center h-50 bg-yellow-400 cursor-pointer relative not-lg:w-full ${close ? 'hidden' : ''}`}>
                     <a href='/' target='_blank' className='w-full'>
                         <img src={introduct.imgIntro} alt="introduct" className='w-full h-50' />
                     </a>
