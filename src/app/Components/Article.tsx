@@ -22,7 +22,7 @@ const Article = () => {
 
     return (
         <>
-            <div className="grid grid-cols-3 justify-center text-center w-full gap-x-5 my-5 
+            <div className="grid grid-cols-3 justify-center text-center w-full gap-x-5 my-5 mt-16
             not-lg:gap-x-3">
                 <div className="flex justify-end flex-row">
                     <div className="flex gap-4 flex-col w-1/2 

@@ -18,7 +18,7 @@ const Sidebar = () => {
     return (
         <div className='w-full bg-black not-lg:h-full'>
             <div className='flex justify-center'>
-                <div className='grid grid-cols-4 grid-rows-5 gap-x-5 h-full py-5
+                <div className='grid grid-cols-4 grid-rows-5 gap-5 h-full py-5
                 not-lg:gap-y-3
                 not-lg:grid-cols-2
                 not-lg:grid-rows-10  

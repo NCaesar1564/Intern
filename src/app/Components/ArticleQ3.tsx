@@ -49,7 +49,7 @@ const ArticleQ3 = ({ cname }: any) => {
                                     alt={article.nameArticle}
                                     className='w-full h-24 border text-xs'
                                 />
-                                <span className='w-full ml-3 text-sm font-bold leading-4 h-24'>{article.nameArticle}</span>
+                                <span className='w-full ml-3 text-sm font-bold leading-4 h-24 not-lg:text-xs'>{article.nameArticle}</span>
                             </a>
                         </div>
                     ))}

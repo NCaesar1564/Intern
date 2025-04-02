@@ -54,7 +54,7 @@ const User = () => {
                     <meta key={a.id} property="og:image" content={a.imgArticle}/>
                 ))}
             </Head>
-            <div>
+            <div >
                 <Header />
             </div>
             <hr className="w-full rounded-3xl" />
