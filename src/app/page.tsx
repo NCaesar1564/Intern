@@ -1,5 +1,3 @@
-"use client";
-import Head from "next/head";
 import User from "@/app/Container/User";
 
 export const metadata = {
