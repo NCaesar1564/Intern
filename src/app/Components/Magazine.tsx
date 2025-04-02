@@ -34,7 +34,7 @@ const Magazine = () => {
         <CarouselContent>
           {Filtered.slice(0, 14).map((article) => (
             <CarouselItem key={article.id} className=" lg:basis-1/4 sm:basis-1/3 cursor-pointer ">
-              <Card className="w-fit h-96 flex flex-col mr-2">
+              <Card className="h-96 flex flex-col mr-2 w-full">
                 <CardContent className="flex flex-col h-full hover:text-blue-400">
                   <a className='cursor-pointer relative overflow-hidden'
                     onMouseEnter={() => setIsHover(article.id)}
@@ -43,9 +43,9 @@ const Magazine = () => {
                   >
                     <div className={`border-black relative transition-all duration-[2s] ${isHover === article.id ? '' : ''}`}>
                       <img
-                        // src={article.imgArticle} alt={article.nameArticle}
-                        src="../images/chagee_znews.webp"
-                        className={`w-full h-96 transition-all duration-[2s] object-cover backdrop-brightness-200 ${isHover === article.id ? 'scale-110' : ''}`}
+                        src={article.imgArticle} alt={article.nameArticle}
+                        // src="../images/chagee_znews.webp"
+                        className={`w-full h-96 transition-all duration-[2s] object-cover backdrop-brightness-50 ${isHover === article.id ? 'scale-110' : ''}`}
                       />
                     </div>
                     <div className='absolute flex flex-col items-center top-[50%]'>

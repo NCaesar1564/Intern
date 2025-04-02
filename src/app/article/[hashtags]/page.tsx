@@ -47,7 +47,7 @@ const ArticleDetail = () => {
     return (
       <>
         <Header />
-        <div className='flex flex-col items-center justify-center w-full mt-32'>
+        <div className='flex flex-col items-center justify-center w-full mt-32  not-lg:mt-20'>
           <div className='w-3/4 flex flex-col justify-center items-start'>
             <a href={`/category/${nameToLink(articles.category)}`} className='hover:to-blue-500'>{articles.category}</a>
             <h1 className='text-3xl font-bold my-3'>{articles.nameArticle}</h1>
@@ -55,7 +55,7 @@ const ArticleDetail = () => {
               <p className={`font-bold ${!articles.author ? 'hidden' : ''}`}>{articles.author}</p>
               <p>{new Date().toLocaleDateString()}</p>
             </span>
-            <span className='font-bold h-12'>{articles.description}</span>
+            <span className='font-bold min-h-12'>{articles.description}</span>
           </div>
           <div dangerouslySetInnerHTML={{ __html: articles.content }} ></div>
           <div>
@@ -78,7 +78,7 @@ const ArticleDetail = () => {
               <a className={`font-bold ${!articles.author ? 'hidden' : ''}`}>{articles.author}</a>
               <p>{new Date().toLocaleDateString()}</p>
             </span>
-            <p className='font-bold h-12'>{articles.description}</p>
+            <p className='font-bold min-h-12'>{articles.description}</p>
             <div dangerouslySetInnerHTML={{ __html: articles.content }} ></div>
           </div>
         </div>

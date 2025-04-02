@@ -68,10 +68,10 @@ const CategoryPage = () => {
         </div>
         <TitileLeft nameTitle='TIN MỚI' />
         <div className='flex justify-center gap-3 mt-3'>
-          <span className='w-3/4'>
+          <span className='w-3/4 not-lg:w-full'>
             <ArticleInList cname={categories.name} />
           </span>
-          <span className={`w-1/4`} >
+          <span className={`w-1/4 not-lg:hidden`} >
             <span className='flex flex-col gap-y-4 h-fit '>
               <span>
                 <Vote />

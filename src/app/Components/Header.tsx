@@ -47,7 +47,7 @@ const Header = () => {
     }, []);
     return (
         <div className={`w-full h-16 flex flex-col items-center shadow-[-10px_-10px_0px_rgba(0,0,0,0.3)] fixed top-0 bg-white z-50 `}>
-            <div className={`w-[68%] flex relative justify-around not-md:w-full`}>
+            <div className={`w-[68%] flex relative justify-around not-lg:w-full`}>
                 <a href="/"
                     onClick={() => {
                         setUnderline(0);
@@ -56,9 +56,9 @@ const Header = () => {
                     className='w-1/2 '>
                     <img src="../Images/logo.png" alt="logo" className='h-full w-54' />
                 </a>
-                <div className='flex gap-5 items-center justify-end w-full'>
+                <div className='flex gap-5 items-center justify-end w-full not-lg:gap-0'>
                     {categories.slice(2, 10).map((cat) => (
-                        <div key={cat.id} className='h-full flex items-center w-full  not-md:hidden'>
+                        <div key={cat.id} className='h-full flex items-center w-full not-lg:hidden'>
                             <a
                                 onClick={(e) => {
                                     setUnderline(cat.id);
@@ -73,24 +73,24 @@ const Header = () => {
                         </div>
                     ))}
                 </div>
-                <a className={`cursor-pointer h-full flex items-center px-3 
-                        not-md:w-full
+                <a className={`cursor-pointer h-full flex items-center  
+                        not-lg:w-1/2
                         `} onClick={SAHSidebar}>
                     {!sidebar ? <HiOutlineDotsHorizontal size={30} /> : <AiOutlineClose size={30} />}
                 </a>
-                <div className={`flex items-center not-md:w-full not-md:justify-start`} >
+                <div className={`flex items-center not-lg:w-full not-lg:text-start`} >
                     <input type="text"
                         className={`${!searchBar
                             ?
                             (`hidden`)
                             :
-                            (`absolute border-2 border-black  bg-gray-600 py-1 rounded-md w-56 -right-24 placeholder:text-white pl-3 text-white `)}`}
+                            (`absolute border-2 border-black  bg-gray-600 py-1 rounded-md w-56 -right-24 placeholder:text-white pl-3 text-white not-lg:right-0`)}`}
                         placeholder='nhập nội dung cần tìm'
                     />
                     <IoIosSearch size={30} onClick={SAHSearchBar} className='cursor-pointer h-full z-50 ml-32 -mr-22 relative' />
                 </div>
             </div>
-            <div className={`transition-all duration-[1s] ${!sidebar ? (`w-full hidden absolute top-10 left-0`) : (`w-full absolute top-16 left-0`)}`}>
+            <div className={`transition-all duration-1000 ${!sidebar ? (`w-full hidden absolute top-10 left-0`) : (`w-full absolute top-16 left-0`)}`}>
                 <Sidebar />
             </div>
             <hr className='text-black h-1 w-full' />
