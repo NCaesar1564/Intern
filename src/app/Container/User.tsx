@@ -1,3 +1,4 @@
+"use client"
 import Article from "@/app/Components/Article"
 import ArticleQ3 from "@/app/Components/ArticleQ3"
 import ArticleQ8 from "@/app/Components/ArticleQ8"

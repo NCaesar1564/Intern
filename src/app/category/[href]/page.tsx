@@ -11,7 +11,6 @@ import Footer from '@/app/Components/Footer';
 import ArticleInList from '../containers/ArticleInList';
 import SpecialNews from '../containers/SpecialNews';
 import Vote from '../containers/Vote';
-import Header2 from '../containers/Header2';
 interface Categories {
   id: number;
   name: string;

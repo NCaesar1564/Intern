@@ -21,8 +21,8 @@ const ArticleDetail = () => {
 
   const nameToLink = (str: string) => {
     return str
-      .normalize("NFD") // Tách dấu khỏi chữ cái
-      .replace(/[\u0300-\u036f]/g, "") // Xóa dấu
+      .normalize("NFD") 
+      .replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
       .replace(/đ/g, "d")
       .replace(/[^a-z0-9 -]/g, "")
@@ -57,7 +57,7 @@ const ArticleDetail = () => {
             </span>
             <span className='font-bold min-h-12'>{articles.description}</span>
           </div>
-          <div dangerouslySetInnerHTML={{ __html: articles.content }} ></div>
+          <div dangerouslySetInnerHTML={{ __html: articles.content }} />
           <div>
             <hr className='w-full mt-5' />
 

@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 const ArticleList = ({ cname }: any) => {
@@ -22,11 +23,12 @@ const ArticleList = ({ cname }: any) => {
             {ArticleFiltered.map((article, index) => (
                 <div key={article.id}>
                     <a className='flex flex-row justify-center cursor-pointer hover:text-blue-700 w-full' href={`/article/${article.hashtags}`}>
-                        <img
-                            src='../Images/chagee_znews.webp'
-                            // src={article.imgArticle}
+                        <Image
+                            src={article.imgArticle}
                             alt={article.nameArticle}
-                            className='w-1/3'
+                            className='w-1/3 h-36 border'
+                            width={100}
+                            height={100}
                         />
                         <span className='flex flex-col w-2/3 ml-4 justify-start'>
                             <p className='text-xl font-bold max-h-3/5'>{article.nameArticle}</p>

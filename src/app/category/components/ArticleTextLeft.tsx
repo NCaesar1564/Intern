@@ -1,4 +1,6 @@
+"use client"
 import axios from 'axios';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 const ArticleLeft = ({ cname, start, end }: any) => {
@@ -21,12 +23,13 @@ const ArticleLeft = ({ cname, start, end }: any) => {
     <>
       {ArticleFiltered.slice(start, end).map((article, index) => (
         <div key={article.id}>
-          <a className='flex flex-col justify-center cursor-pointer hover:text-blue-700' href={`/article/${article.hashtags}`}>
-            <img
-              src='../Images/chagee_znews.webp'
-              // src={article.imgArticle}
+          <a className='flex flex-col justify-center cursor-pointer hover:text-blue-700 ' href={`/article/${article.hashtags}`}>
+            <Image
+              src={article.imgArticle}
               alt={article.nameArticle}
-              className='max-h-4/5 '
+              className='w-full h-[200px] border max-h-4/5'
+              width={200}
+              height={500}
             />
             <p className='font-bold max-h-1/5 mb-6'>{article.nameArticle}</p>
           </a>

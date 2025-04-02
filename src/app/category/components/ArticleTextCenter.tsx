@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
@@ -22,12 +23,14 @@ const ArticleCenter = ({ cname, start, end }: any) => {
     return (
         <div>
             {ArticleFiltered.slice(start, end).map((article) => (
-                <a className='cursor-pointer hover:text-blue-700' key={article.id} href={`/article/${article.hashtags}`}>
-                    <img
-                        src='../Images/chagee_znews.webp'
-                        // src={article.imgArticle} 
+                <a className='cursor-pointer hover:text-blue-700 h-96' key={article.id} href={`/article/${article.hashtags}`}>
+                    <Image
+                        // src='../Images/chagee_znews.webp'
+                        src={article.imgArticle} 
                         alt={article.nameArticle}
-                        className='w-full '
+                        className='w-full h-96 border'
+                        height={100}
+                        width={100}
                     />
                     <p className='text-center w-full text-2xl font-bold mt-3'>{article.nameArticle}</p>
                     <p className='text-center w-full text-sm'>{article.description}</p>

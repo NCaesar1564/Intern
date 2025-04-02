@@ -1,5 +1,7 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 const Article = () => {
     interface Article {
         id: number;
@@ -30,11 +32,13 @@ const Article = () => {
                                 key={article.id}
                                 href={`/article/${article.hashtags}`}>
                                 <span className="w-1/3 cursor-pointer flex justify-center not-lg:w-full">
-                                    <img
-                                        // src="../images/chagee_znews.webp"
+                                    <Image
                                         src={article.imgArticle}
                                         alt={article.nameArticle}
-                                        className="h-18 w-full border text-xs" />
+                                        className="h-18 w-full border text-xs"
+                                        height={72}
+                                        width={100}
+                                    />
                                 </span>
                                 <span className="w-2/3 cursor-pointer font-bold text-sm  flex-wrap text-wrap ml-4 flex justify-start text-start 
                                 not-lg:text-xs">{article.nameArticle}</span>

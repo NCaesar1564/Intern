@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
 const SubCategory = ({ name }: any) => {
