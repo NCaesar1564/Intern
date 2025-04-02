@@ -108,11 +108,11 @@ const User = () => {
                 <Introduct2 />
             </div>
             <div className="flex justify-center">
-                <div className="w-[71.5%] bg-black h-[1px]"></div>
+                <div className="w-[71.5%] bg-black h-[1px] not-lg:w-full"></div>
             </div>
             <div className="w-full flex justify-center">
                 <div className="w-full flex flex-col items-center">
-                    <div className="grid grid-cols-4 w-[71.5%] gap-5 not-lg:grid-cols-2">
+                    <div className="grid grid-cols-4 w-[71.5%] gap-5 not-lg:w-full not-lg:grid-cols-2">
                         {categories.slice(4, 20).map(categorie => (
                             <div key={categorie.id}>
                                 <ArticleQ3 cname={categorie.name} />
