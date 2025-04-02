@@ -16,6 +16,7 @@ import TitleNoUnderline from "@/app/Components/TitleNoUnderline"
 import axios from "axios"
 import { useEffect, useState } from "react"
 import Video from "../Components/Video"
+import Head from "next/head"
 
 const User = () => {
     interface Categories {
@@ -23,14 +24,36 @@ const User = () => {
         name: string;
         href: string;
     }
+    interface Article {
+        id: number;
+        nameArticle: string;
+        imgArticle: string;
+        hashtags: string;
+        description?: string;
+        category: string;
+    }
     const [categories, setCategories] = useState<Categories[]>([])
+    const [articles, setArticles] = useState<Article[]>([]);
+
     useEffect(() => {
         axios.get('/data.json')
             .then(response => setCategories(response.data.categories))
             .catch(error => console.error(error))
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        fetch("/data.json")
+            .then((response) => response.json())
+            .then((data) => setArticles(data.articles))
+            .catch((error) => console.error("Lỗi mẹ nữa gòy: ", error));
+    }, []);
     return (
         <>
+            <Head>
+                {articles.slice(0, 1).map((a) => (
+                    <meta key={a.id} property="og:image" content={a.imgArticle}/>
+                ))}
+            </Head>
             <div>
                 <Header />
             </div>
