@@ -53,7 +53,7 @@ const ArticleDetail = () => {
   if (articles.idContent === 1) {
     return (
       <>
-        <Head key={articles.id} >
+        <Head>
           <meta property="og:image" content={articles.imgArticle} />
           <meta property="og:title" content={articles.nameArticle} />
           <meta property="og:url" content={articles.hashtags} />
