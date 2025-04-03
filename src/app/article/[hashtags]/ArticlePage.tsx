@@ -1,21 +1,48 @@
 "use client"
+import Article from '@/app/Components/Article';
 import Header from '@/app/category/containers/Header';
+import { Metadata, ResolvingMetadata } from 'next';
 import Head from 'next/head';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react'
 
-const ArticleDetail = () => {
-  interface Article {
-    id: number;
-    idContent: number;
-    nameArticle: string;
-    imgArticle: string;
-    hashtags: string;
-    description?: string;
-    author: string;
-    content: string;
-    category: string;
+interface Article {
+  id: number;
+  idContent: number;
+  nameArticle: string;
+  imgArticle: string;
+  hashtags: string;
+  description?: string;
+  author: string;
+  content: string;
+  category: string;
+}
+
+type Props = {
+  params: Promise<{ id: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { id } = await params
+  const article = await fetch(`/data.json/articles/${id}`).then((res) => res.json())
+  const previousImages = (await parent).openGraph?.images || []
+
+  return {
+    title: article.nameArticle,
+    openGraph: {
+      title: article.nameArticle,
+      images: [article.imgArticle, ...previousImages],
+      description: article.description
+    },
   }
+}
+
+const ArticleDetail = () => {
+
   const params = useParams();
   const hashtags = params.hashtags as string;
   const [articles, setArticles] = useState<Article | null>(null);
