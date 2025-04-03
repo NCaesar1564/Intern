@@ -18,29 +18,6 @@ interface Article {
   category: string;
 }
 
-type Props = {
-  params: Promise<{ id: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}
-
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const { id } = await params
-  const article = await fetch(`/data.json/articles/${id}`).then((res) => res.json())
-  const previousImages = (await parent).openGraph?.images || []
-
-  return {
-    title: article.nameArticle,
-    openGraph: {
-      title: article.nameArticle,
-      images: [article.imgArticle, ...previousImages],
-      description: article.description
-    },
-  }
-}
-
 const ArticleDetail = () => {
 
   const params = useParams();

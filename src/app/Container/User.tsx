@@ -16,7 +16,6 @@ import TitleNoUnderline from "@/app/Components/TitleNoUnderline"
 import axios from "axios"
 import { useEffect, useState } from "react"
 import Video from "../Components/Video"
-import Head from "next/head"
 
 const User = () => {
     interface Categories {
