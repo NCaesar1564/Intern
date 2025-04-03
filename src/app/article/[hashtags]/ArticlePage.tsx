@@ -2,7 +2,6 @@
 import Article from '@/app/Components/Article';
 import Header from '@/app/category/containers/Header';
 import { Metadata, ResolvingMetadata } from 'next';
-import Head from 'next/head';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react'
 
