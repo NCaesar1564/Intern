@@ -57,14 +57,7 @@ const ArticleDetail = () => {
   if (articles.idContent === 1) {
     return (
       <>
-        <Head>
-          <meta property="og:image" content={articles.imgArticle} />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
-          <meta property="og:title" content={articles.nameArticle} />
-          <meta property="og:url" content={articles.hashtags} />
-          <meta property="og:description" content={articles.description} />
-        </Head>
+
         <Header />
         <div className='flex flex-col items-center justify-center w-full mt-32  not-lg:mt-20'>
           <div className='w-3/4 flex flex-col justify-center items-start'>

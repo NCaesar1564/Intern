@@ -1,14 +1,11 @@
-// import type { Metadata } from "next";
+import fs from "fs";
+import path from "path";
 import "./globals.css";
 
-// export const metadata: Metadata = {
-//   title: "nameArticle",
-//   openGraph: {
-//     url: "hashtags",
-//     description: "description",
-//     images: "imgArticle"
-//   }
-// };
+const filePath = path.join(process.cwd(), "public", "data.json");
+const jsonData = fs.readFileSync(filePath, "utf-8");
+const data = JSON.parse(jsonData);
+const articles = data.articles?.[0] || {}; 
 
 export default function RootLayout({
   children,
@@ -17,7 +14,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <head>
+        <meta property="og:image" content={articles.imgArticle} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:title" content={articles.nameArticle} />
+        <meta property="og:url" content={articles.hashtags} />
+        <meta property="og:description" content={articles.description} />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
