@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "nameArticle",
-  openGraph: {
-    description: "description",
-    images: "imgArticle"
-  }
-};
+// export const metadata: Metadata = {
+//   title: "nameArticle",
+//   openGraph: {
+//     url: "hashtags",
+//     description: "description",
+//     images: "imgArticle"
+//   }
+// };
 
 export default function RootLayout({
   children,

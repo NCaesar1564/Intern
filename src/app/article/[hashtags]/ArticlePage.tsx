@@ -59,6 +59,8 @@ const ArticleDetail = () => {
       <>
         <Head>
           <meta property="og:image" content={articles.imgArticle} />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
           <meta property="og:title" content={articles.nameArticle} />
           <meta property="og:url" content={articles.hashtags} />
           <meta property="og:description" content={articles.description} />
