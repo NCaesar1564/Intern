@@ -57,7 +57,6 @@ const Article = () => {
                                 href={`/article/${article.hashtags}`}>
                                 <span className="cursor-pointer">
                                     <img
-                                        // src="../images/chagee_znews.webp"
                                         src={article.imgArticle}
                                         alt={article.nameArticle}
                                         className="h-80 w-full border text-xs" />
@@ -80,9 +79,8 @@ const Article = () => {
                                 href={`/article/${article.hashtags}`}>
                                 <span className="cursor-pointer flex justify-center w-full ">
                                     <img
-                                        src="../images/chagee_znews.webp"
-                                        // src={article.imgArticle} alt={article.nameArticle}
-                                        className="h-48 w-full" />
+                                        src={article.imgArticle} alt={article.nameArticle}
+                                        className="h-48 w-full border" />
                                 </span>
                                 <span className="cursor-pointer font-bold text-sm flex-wrap text-wrap w-full text-start not-lg:text-xs">{article.nameArticle}</span>
                             </Link>

@@ -37,7 +37,7 @@ const Video = () => {
             <div key={listVideo.id} className={`flex gap-4 m-3 cursor-pointer hover:text-blue-600 ${videoSelected === listVideo.id ? 'bg-gray-500': ''}`}
               onClick={() => setVideoSelected(listVideo.id)}
             >
-              <img src={listVideo.imgVideo} alt="" className='h-1/6 w-2/5 border' />
+              <img src={listVideo.imgVideo} alt="" className='h-22 w-2/5 border' height={75} width={100}/>
               <span className='flex flex-col justify-around'>
                 <p className='text-sm font-bold'>{listVideo.nameVideo} </p>
                 <p className='text-sm'>{listVideo.categoryVideo}</p>

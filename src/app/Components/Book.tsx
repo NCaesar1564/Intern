@@ -34,7 +34,11 @@ export default function Book() {
               <Card className="w-52 h-50 flex flex-col border border-gray-300 not-sm:w-full">
                 <CardContent className="flex flex-col h-fit hover:text-blue-400">
                   <Link href={`/article/${article.hashtags}`}>
-                    <img src="/images/chagee_znews.webp" alt={article.nameArticle} className="h-7/12 w-full object-cover rounded-t-lg" />
+                    <img
+                      // src="/images/chagee_znews.webp"
+                      src={article.imgArticle}
+                      alt={article.nameArticle}
+                      className="h-36 w-full object-cover rounded-t-lg border" />
                     <div className="mt-1 px-1 flex-grow flex items-center h-10">
                       <span className="text-start text-xs font-bold h-10 text-wrap">{article.nameArticle}</span>
                     </div>
