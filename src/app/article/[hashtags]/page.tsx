@@ -5,7 +5,7 @@ export default function page() {
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
     (process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : "http://localhost:3000");
-  const ogImage = `${siteUrl}/Images/example.jpg`;
+  const ogImage = `${siteUrl}/Imagesbanner.png`;
   return (
     <>
       <Head>
