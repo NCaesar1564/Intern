@@ -2,13 +2,14 @@ import Head from 'next/head';
 import PageWrapper from './PageWrapper'
 export default function page() {
   console.log("Home component đang chạy trên:", typeof window === "undefined" ? "Server" : "Client");
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : "http://localhost:3000");
+  const ogImage = `${siteUrl}/Images/example.jpg`;
   return (
     <>
       <Head>
-        <meta property="og:title" content="Tiêu đề trang" />
-        <meta property="og:description" content="Mô tả trang" />
-        <meta property="og:image" content="https://example.com/og-image.jpg" />
-        <meta property="og:url" content="https://example.com" />
+        <meta property="og:image" content={ogImage} />
       </Head>
       <PageWrapper />
     </>
