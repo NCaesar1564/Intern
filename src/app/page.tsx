@@ -1,8 +1,7 @@
-import User from "@/app/Container/User";
+import UserWrapper from "@/app/Container/UserWrapper";
+
 export default function Home() {
   return (
-    <>
-      <User />
-    </>
+    <UserWrapper />
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import { IoIosSearch, IoMdClose } from 'react-icons/io'
+import { IoIosSearch } from 'react-icons/io'
 import Sidebar from './Sidebar';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -46,14 +46,14 @@ const Header = () => {
         }
     }, []);
     return (
-        <div className={`w-full h-14 flex flex-col items-center shadow-[-10px_-10px_0px_rgba(0,0,0,0.3)] fixed top-0 bg-white z-50 border border-b-black`}>
+        <div className={`w-full h-14 flex flex-col items-center justify-center shadow-[2px_2px_2px_rgba(0,0,0,0.2)] fixed top-0 bg-white z-50 border border-b-black border-x-white`}>
             <div className={`w-[68%] flex relative justify-around not-lg:w-full`}>
                 <a href="/"
                     onClick={() => {
                         setUnderline(0);
                         localStorage.setItem('underline', '0')
                     }}
-                    className='w-2/5 h-fit'>
+                    className='w-2/5 h-full mr-5'>
                     <img src="../Images/logo.png" alt="logo" className='h-full w-54' />
                 </a>
                 <div className='flex gap-5 items-center justify-end w-full not-lg:gap-0'>
@@ -67,7 +67,7 @@ const Header = () => {
                                 href={`/category/${cat.href}`}
                                 className={`cursor-pointer text-xs font-bold hover:underline underline-offset-[16px]
                                      decoration-[3px] hover:text-blue-500 text-nowrap whitespace-nowrap 
-                                     ${underline === cat.id ? 'underline text-blue-500 underline-offset-[16px]' : ''} `}
+                                     ${underline === cat.id ? 'underline text-blue-500 underline-offset-[22px]' : ''} `}
                             >{cat.name}
                             </a>
                         </div>
@@ -84,16 +84,15 @@ const Header = () => {
                             ?
                             (`hidden`)
                             :
-                            (`absolute border-2 border-black  bg-gray-600 py-1 rounded-md w-56 -right-24 placeholder:text-white pl-3 text-white not-lg:right-0`)}`}
+                            (`absolute border-2 border-black  bg-gray-600 py-1 rounded-md w-56 right-0 placeholder:text-white px-3 text-white not-lg:right-3`)}`}
                         placeholder='nhập nội dung cần tìm'
                     />
-                    <IoIosSearch size={30} onClick={SAHSearchBar} className='cursor-pointer h-full z-50 ml-32 -mr-22 relative' />
+                    <IoIosSearch size={30} onClick={SAHSearchBar} className='cursor-pointer h-full z-50 ml-32 relative not-lg:ml-28' />
                 </div>
             </div>
             <div className={`transition-all duration-1000 ${!sidebar ? (`w-full hidden absolute top-10 left-0`) : (`w-full absolute top-14 left-0`)}`}>
                 <Sidebar />
             </div>
-            <hr className='text-black h-1 w-full' />
 
         </div>
     )

@@ -30,7 +30,6 @@ const ArticleQ3 = ({ cname }: any) => {
                             className='row-span-2 cursor-pointer hover:text-blue-900 text-sm'
                             href={`/article/${article.hashtags}`}>
                             <img
-                                // src="../images/chagee_znews.webp"
                                 src={article.imgArticle}
                                 alt={article.nameArticle}
                                 className='w-full min-h-fit h-2/3 border'
@@ -44,7 +43,6 @@ const ArticleQ3 = ({ cname }: any) => {
                             <a className='flex flex-row justify-center hover:text-blue-900 text-sm'
                                 href={`/article/${article.hashtags}`}>
                                 <img
-                                    // src="../images/chagee_znews.webp"
                                     src={article.imgArticle}
                                     alt={article.nameArticle}
                                     className='w-full h-24 border text-xs'
