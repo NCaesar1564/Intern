@@ -49,11 +49,6 @@ const User = () => {
     }, []);
     return (
         <>
-            <Head>
-                {articles.slice(0, 1).map((a) => (
-                    <meta key={a.id} property="og:image" content={a.imgArticle}/>
-                ))}
-            </Head>
             <div >
                 <Header />
             </div>

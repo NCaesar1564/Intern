@@ -67,7 +67,7 @@ const Header = () => {
                                 href={`/category/${cat.href}`}
                                 className={`cursor-pointer text-xs font-bold hover:underline underline-offset-[16px]
                                      decoration-[3px] hover:text-blue-500 text-nowrap whitespace-nowrap 
-                                     ${underline === cat.id ? 'underline text-blue-500 underline-offset-[22px]' : ''} `}
+                                     ${underline === cat.id ? 'underline text-blue-500 underline-offset-[16px]' : ''} `}
                             >{cat.name}
                             </a>
                         </div>
