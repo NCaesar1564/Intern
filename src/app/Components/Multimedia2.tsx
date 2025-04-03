@@ -31,7 +31,7 @@ const Multimedia2 = () => {
                         <img
                             // src="../images/chagee_znews.webp"
                             src={article.imgArticle}
-                            alt={article.hashtags}
+                            alt={article.nameArticle}
                             className="h-[20vh] border border-black w-3/12 not-lg:w-full" />
                         <span className="flex flex-col ml-3 w-9/12">
                             <div className="font-bold  text-xl not-lg:text-lg">{article.nameArticle}</div>

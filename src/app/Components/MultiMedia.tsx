@@ -36,10 +36,11 @@ const MultiMedia = () => {
               key={article.id} >
 
               <a className='w-5/6 h-[45vh]' href={`/article/${article.hashtags}`}>
-                <img
+                <img  
                   src={article.imgArticle}
+                  alt={article.nameArticle}
                   className='w-full h-full object-cover cursor-pointer border border-black'
-                  alt={article.nameArticle} />
+                />
               </a>
               <a className='w-5/6 mt-2' href={`/article/${article.hashtags}`}>
                 <div className='text-start text-2xl font-bold '>{article.nameArticle}</div>
@@ -54,11 +55,9 @@ const MultiMedia = () => {
                 className='cursor-pointer col-span-1 row-span-1 flex flex-col items-center justify-center h-36 mt-5 hover:text-blue-900'
                 href={`/article/${article.hashtags}`}>
                 <img
-                  // src="../images/chagee_znews.webp"
                   src={article.imgArticle}
                   alt={article.nameArticle}
-                  className='w-10/12 h-[20vh]
-                  border border-black'
+                  className='w-10/12 h-[20vh] border border-black'
                 />
                 <div className='text-start flex-wrap text-wrap w-10/12 h-[33] text-sm font-bold not-lg:text-xs' >{article.nameArticle}</div>
               </a>
