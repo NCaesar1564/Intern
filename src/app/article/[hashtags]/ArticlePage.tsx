@@ -20,17 +20,6 @@ const ArticleDetail = () => {
   const hashtags = params.hashtags as string;
   const [articles, setArticles] = useState<Article | null>(null);
 
-  const nameToLink = (str: string) => {
-    return str
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase()
-      .replace(/đ/g, "d")
-      .replace(/[^a-z0-9 -]/g, "")
-      .replace(/\s+/g, "-")
-      .trim();
-  };
-
   useEffect(() => {
     if (!hashtags || typeof hashtags !== "string") return;
     fetch('/data.json')
@@ -42,19 +31,15 @@ const ArticleDetail = () => {
       .catch(error => console.error(error))
   }, [hashtags]);
 
-  const metadata: Metadata = {
-    title: `ZNew | ${articles?.nameArticle}`,
-    openGraph: {
-      type: "website",
-      description: "Trang chủ",
-      images: [
-        {
-          url: `${articles?.imgArticle}`,
-          height: 1200,
-          width: 720
-        }
-      ]
-    }
+  const nameToLink = (str: string) => {
+    return str
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/đ/g, "d")
+      .replace(/[^a-z0-9 -]/g, "")
+      .replace(/\s+/g, "-")
+      .trim();
   };
 
   if (!articles) return (
