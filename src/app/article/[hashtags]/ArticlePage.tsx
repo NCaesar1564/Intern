@@ -4,18 +4,39 @@ import { Metadata } from 'next';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react'
 
-const ArticleDetail = () => {
-  interface Article {
-    id: number;
-    idContent: number;
-    nameArticle: string;
-    imgArticle: string;
-    hashtags: string;
-    description?: string;
-    author: string;
-    content: string;
-    category: string;
+interface Article {
+  id: number;
+  idContent: number;
+  nameArticle: string;
+  imgArticle: string;
+  hashtags: string;
+  description?: string;
+  author: string;
+  content: string;
+  category: string;
+}
+
+export const metadata: Metadata = {
+  title:
+    'defaultName',
+  openGraph: {
+    type: "website",
+    description: 'defaultDescription',
+    url: 'defaulturl',
+    images: [
+      {
+        url:
+          'https://coffective.com/wp-content/uploads/2018/06/default-featured-image.png.jpg',
+        height: 1200,
+        width: 720,
+        alt: 'alt for image'
+      }
+    ]
   }
+};
+
+const ArticleDetail = () => {
+
   const params = useParams();
   const hashtags = params.hashtags as string;
   const [articles, setArticles] = useState<Article | null>(null);
