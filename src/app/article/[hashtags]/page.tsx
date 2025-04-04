@@ -1,7 +1,7 @@
 import ArticlePage from './ArticlePage'
 import { Metadata } from "next";
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title:
     'defaultname',
   openGraph: {
