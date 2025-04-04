@@ -1,38 +1,25 @@
+import { Metadata } from 'next';
 import ArticlePage from './ArticlePage'
-import { Metadata, ResolvingMetadata } from "next";
 
-type Props = {
-  params: { hashtags: string }
-}
-
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const hashtags = (await params).hashtags
-
-  const article = await fetch(`http://localhost:3000/article/${hashtags}`)
-    .then((res) =>
-      res.json()
-    )
-
-  return {
-    title: article.nameArticle,
-    description: article.description,
-    openGraph: {
-      images: [
-        {
-          url: `${article.imgArticle}`,
-          height: 1200,
-          width: 720
-        }
-      ]
-    }
+export const metadata: Metadata = {
+  title: "ZNew | nameArticle",
+  openGraph: {
+    url: "hashtags",
+    type: 'website',
+    description: "description for Article",
+    images: [
+      {
+        url: "https://down-vn.img.susercontent.com/file/promo-dim-01003f4edf8cee6efa614ecc856ac3fd1efa",
+        width: 1200,
+        height: 630,
+        alt: "Alt text cho hình ảnh"
+      }
+    ]
   }
-}
+};
 
 
-export default function page({ params }: Props) {
+export default function page() {
   return (
     <>
       <ArticlePage />
