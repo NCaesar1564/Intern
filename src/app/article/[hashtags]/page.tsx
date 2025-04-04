@@ -25,7 +25,7 @@ export async function generateMetadata(
   { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const hashtags = params.id
+  const hashtags = params.hashtags
   const res = await fetch(`http://localhost:3000/data.json`);
   const data = await res.json();
   const articles: Article[] = data.articles;
