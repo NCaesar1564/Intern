@@ -5,16 +5,18 @@ import Image from "next/image";
 const Article = () => {
     interface Article {
         id: number;
+        idContent: number;
         nameArticle: string;
         imgArticle: string;
         hashtags: string;
         description?: string;
         category: string;
+        author: string;
     }
     const [articles, setArticles] = useState<Article[]>([]);
 
     useEffect(() => {
-        fetch("/data.json")
+        fetch("data.json")
             .then((response) => response.json())
             .then((data) => setArticles(data.articles))
             .catch((error) => console.error("Lỗi mẹ nữa gòy: ", error));
@@ -29,8 +31,8 @@ const Article = () => {
                     not-lg:hidden" >
                         {articles.slice(0, 5).map((article) => (
                             <a className="flex flex-row w-full justify-center hover:text-green-800 "
-                                key={article.id}
-                                href={`/article/${article.hashtags}`}>
+                                key={article.hashtags}
+                                href={`article/${article.hashtags}`}>
                                 <span className="w-1/3 cursor-pointer flex justify-center not-lg:w-full">
                                     <Image
                                         src={article.imgArticle}
@@ -53,8 +55,8 @@ const Article = () => {
                     <div className="flex justify-center items-start w-full" >
                         {articles.slice(5, 6).map((article) => (
                             <Link className="flex gap-4 flex-col hover:text-green-800 text-start"
-                                key={article.id}
-                                href={`/article/${article.hashtags}`}>
+                                key={article.hashtags}
+                                href={`${article.hashtags}`}>
                                 <span className="cursor-pointer">
                                     <img
                                         src={article.imgArticle}
@@ -75,8 +77,8 @@ const Article = () => {
                         not-lg:w-full" >
                         {articles.slice(6, 8).map((article) => (
                             <Link className="flex flex-col  w-full justify-center hover:text-green-800"
-                                key={article.id}
-                                href={`/article/${article.hashtags}`}>
+                                key={article.hashtags}
+                                href={`${article.hashtags}`}>
                                 <span className="cursor-pointer flex justify-center w-full ">
                                     <img
                                         src={article.imgArticle} alt={article.nameArticle}

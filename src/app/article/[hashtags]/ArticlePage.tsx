@@ -1,25 +1,25 @@
 "use client"
-import Article from '@/app/Components/Article';
 import Header from '@/app/category/containers/Header';
+import { Metadata } from 'next';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react'
 
-interface Article {
-  id: number;
-  idContent: number;
-  nameArticle: string;
-  imgArticle: string;
-  hashtags: string;
-  description?: string;
-  author: string;
-  content: string;
-  category: string;
-}
-
 const ArticleDetail = () => {
-  const [articles, setArticles] = useState<Article | null>(null);
+  interface Article {
+    id: number;
+    idContent: number;
+    nameArticle: string;
+    imgArticle: string;
+    hashtags: string;
+    description?: string;
+    author: string;
+    content: string;
+    category: string;
+  }
   const params = useParams();
   const hashtags = params.hashtags as string;
+  const [articles, setArticles] = useState<Article | null>(null);
+
   const nameToLink = (str: string) => {
     return str
       .normalize("NFD")
@@ -42,6 +42,21 @@ const ArticleDetail = () => {
       .catch(error => console.error(error))
   }, [hashtags]);
 
+  const metadata: Metadata = {
+    title: `ZNew | ${articles?.nameArticle}`,
+    openGraph: {
+      type: "website",
+      description: "Trang chủ",
+      images: [
+        {
+          url: `${articles?.imgArticle}`,
+          height: 1200,
+          width: 720
+        }
+      ]
+    }
+  };
+
   if (!articles) return (
     <h1 className='flex justify-center h-screen w-full items-center flex-col gap-y-3'>
       <div className='border-8 border-black border-b-gray-400 w-[100px] h-[100px] rounded-[50%] animate-spin '></div>
@@ -53,7 +68,6 @@ const ArticleDetail = () => {
   if (articles.idContent === 1) {
     return (
       <>
-
         <Header />
         <div className='flex flex-col items-center justify-center w-full mt-32  not-lg:mt-20'>
           <div className='w-3/4 flex flex-col justify-center items-start'>
