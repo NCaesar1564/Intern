@@ -1,7 +1,6 @@
 "use client"
 import Article from '@/app/Components/Article';
 import Header from '@/app/category/containers/Header';
-import { Metadata, ResolvingMetadata } from 'next';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react'
 
@@ -17,30 +16,8 @@ interface Article {
   category: string;
 }
 
-const [articles, setArticles] = useState<Article | null>(null);
-
-type Props = {
-  params: Promise<{ id: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const { id } = await params
-
-  return {
-      title: `ZNew | ${articles?.nameArticle}`,
-      openGraph: {
-          images: [{
-              url: `${articles?.imgArticle}`,
-              width: 1200,
-              height: 730,
-          }],
-      },
-  }
-}
 const ArticleDetail = () => {
+  const [articles, setArticles] = useState<Article | null>(null);
   const params = useParams();
   const hashtags = params.hashtags as string;
   const nameToLink = (str: string) => {
