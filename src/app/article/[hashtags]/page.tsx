@@ -2,12 +2,11 @@ import ArticlePage from './ArticlePage'
 import { Metadata, ResolvingMetadata } from "next";
 
 type Props = {
-  params: Promise<{ hashtags: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+  params: { hashtags: string }
 }
 
 export async function generateMetadata(
-  { params, searchParams }: Props,
+  { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const hashtags = (await params).hashtags
@@ -33,8 +32,7 @@ export async function generateMetadata(
 }
 
 
-export default function page({ params, searchParams }: Props) {
-  console.log("Home component đang chạy trên:", typeof window === "undefined" ? "Server" : "Client");
+export default function page({ params }: Props) {
   return (
     <>
       <ArticlePage />
