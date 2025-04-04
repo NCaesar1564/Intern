@@ -2,10 +2,7 @@ import ArticlePage from './ArticlePage'
 
 import { Metadata, ResolvingMetadata } from "next";
 
-type Props = {
-  params: { id: string }
-  searchParams: { [key: string]: string | string[] | undefined }
-}
+
 
 interface Article {
   id: number;
@@ -17,6 +14,11 @@ interface Article {
   author: string;
   content: string;
   category: string;
+}
+
+type Props = {
+  params: { hashtags: string }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
 export async function generateMetadata(
