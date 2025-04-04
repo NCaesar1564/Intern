@@ -44,19 +44,19 @@ interface Props {
 }
 export default function page({ article }: Props) {
   const metadata: Metadata = {
-    title: 
-    // `${article.nameArticle}` || 
-    'default name',
+    title:
+      // `${article.nameArticle}` || 
+      'defaultname',
     openGraph: {
       type: "website",
-      description: 
-      // `${article.description}` || 
-      'default description',
+      description:
+        // `${article.description}` || 
+        'defaultdescription',
       images: [
         {
-          url: 
-          // `${article.imgArticle}` || 
-          'https://coffective.com/wp-content/uploads/2018/06/default-featured-image.png.jpg',
+          url:
+            // `${article.imgArticle}` || 
+            'https://coffective.com/wp-content/uploads/2018/06/default-featured-image.png.jpg',
           height: 1200,
           width: 720
         }
