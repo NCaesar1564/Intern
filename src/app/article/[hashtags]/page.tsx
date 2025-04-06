@@ -2,15 +2,19 @@ import { Metadata } from 'next';
 import ArticleDetail from './ArticleDetail'; 
 import axios from 'axios';
 
-type Props = {
-  params: { hashtags: string };
-};
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+type Params = { hashtags: string };
+
+interface PageProps {
+  params: Params;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { hashtags } = params;
+
   const res = await axios.get(`http://localhost:4000/articles`);
   const article = res.data.find((a: { hashtags: string }) => a.hashtags === hashtags);
+
   if (!article) {
-    
     return {
       title: 'Bài viết không tồn tại',
       description: 'Không tìm thấy bài viết yêu cầu',
@@ -35,6 +39,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function Page({ params }: Props) {
+export default function Page({ params }: PageProps) {
   return <ArticleDetail />;
 }
