@@ -1,5 +1,6 @@
 "use client"
 
+import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
 const MultiMedia = () => {
@@ -12,10 +13,8 @@ const MultiMedia = () => {
   }
   const [articles, setArticles] = useState<Article[]>([]);
   useEffect(() => {
-    fetch("/data.json")
-      .then(response => response.json())
-      .then((data) => setArticles(data.articles))
-      .catch(error => console.error("Lỗi mẹ gòy: ", error));
+    axios.get('http://localhost:4000/articles').then(res => setArticles(res.data)).catch(err => console.error(err))
+
   })
   return (
     <div className='mt-5 w-full flex justify-center'>
@@ -36,7 +35,7 @@ const MultiMedia = () => {
               key={article.id} >
 
               <a className='w-5/6 h-[45vh]' href={`/article/${article.hashtags}`}>
-                <img  
+                <img
                   src={article.imgArticle}
                   alt={article.nameArticle}
                   className='w-full h-full object-cover cursor-pointer border border-black'

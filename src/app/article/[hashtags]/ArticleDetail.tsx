@@ -1,41 +1,21 @@
 "use client"
 import Header from '@/app/category/containers/Header';
-import { Metadata } from 'next';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react'
 
-interface Article {
-  id: number;
-  idContent: number;
-  nameArticle: string;
-  imgArticle: string;
-  hashtags: string;
-  description?: string;
-  author: string;
-  content: string;
-  category: string;
-}
-
-export const metadata: Metadata = {
-  title:
-    'defaultName',
-  openGraph: {
-    type: "website",
-    description: 'defaultDescription',
-    url: 'defaulturl',
-    images: [
-      {
-        url:
-          'https://coffective.com/wp-content/uploads/2018/06/default-featured-image.png.jpg',
-        height: 1200,
-        width: 720,
-        alt: 'alt for image'
-      }
-    ]
-  }
-};
-
 const ArticleDetail = () => {
+
+  interface Article {
+    id: number;
+    idContent: number;
+    nameArticle: string;
+    imgArticle: string;
+    hashtags: string;
+    description?: string;
+    author: string;
+    content: string;
+    category: string;
+  }
 
   const params = useParams();
   const hashtags = params.hashtags as string;
@@ -43,10 +23,10 @@ const ArticleDetail = () => {
 
   useEffect(() => {
     if (!hashtags || typeof hashtags !== "string") return;
-    fetch('/data.json')
+    fetch('http://localhost:4000/articles')
       .then(res => res.json())
       .then((data) => {
-        const ArticleFound = data.articles.find((a: Article) => a.hashtags === hashtags);
+        const ArticleFound = data.find((a: Article) => a.hashtags === hashtags);
         setArticles(ArticleFound || null)
       })
       .catch(error => console.error(error))

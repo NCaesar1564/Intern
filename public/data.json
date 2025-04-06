@@ -1,9 +1,21 @@
 {
     "hashtags": [
-        "cách mạng tinh gọn bộ máy",
-        "Sáp nhập tỉnh thành",
-        "Tin Tức A",
-        "Tin Tức B"
+        {
+            "id": 1,
+            "tag": "cách mạng tinh gọn bộ máy"
+        },
+        {
+            "id": 2,
+            "tag": "Sáp nhập tỉnh thành"
+        },
+        {
+            "id": 3,
+            "tag": "Tin Tức A"
+        },
+        {
+            "id": 4,
+            "tag": "Tin Tức B"
+        }
     ],
     "categories": [
         {

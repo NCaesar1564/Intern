@@ -15,11 +15,11 @@ const Multimedia2 = () => {
     const [articles, setArticles] = useState<Article[]>([]);
 
     useEffect(() => {
-        axios.get("/data.json")
+        axios.get("http://localhost:4000/articles")
             .then(response => {
-                setArticles(response.data.articles || [])
+                setArticles(response.data)
             })
-            .catch(error => console.error("Lỗi mẹ gòy: ", error))
+            .catch(err => console.error("Lỗi mẹ gòy: ", err))
     }, []);
 
 
@@ -29,7 +29,6 @@ const Multimedia2 = () => {
                 <div key={article.id || index}>
                     <Link className="flex flex-row mb-3 cursor-pointer hover:text-blue-900 not-lg:flex-col not-md:items-start w-full" href={`/article/${article.hashtags}`}>
                         <img
-                            // src="../images/chagee_znews.webp"
                             src={article.imgArticle}
                             alt={article.nameArticle}
                             className="h-[20vh] border border-black w-3/12 not-lg:w-full" />

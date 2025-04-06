@@ -12,8 +12,8 @@ const Introduct2 = () => {
     const [introducts, setIntroducts] = useState<Introduct2[]>([])
     const [close, setClose] = useState(false);
     useEffect(() => {
-        axios.get('/data.json')
-            .then(response => setIntroducts(response.data.introductions))
+        axios.get('http://localhost:4000/introductions')
+            .then(response => setIntroducts(response.data))
             .catch(error => console.error("Lỗi mẹ gòy: ", error))
     })
     const HideIntroduction = () => {

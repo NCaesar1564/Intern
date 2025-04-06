@@ -26,15 +26,16 @@ const Introduct = () => {
     const [introductions, setIntroductions] = useState<Introduction[]>([]);
     const [podcasts, setPodcast] = useState<Podcast[]>([]);
     const [closedIntroduct, setClosedIntroduct] = useState<number[]>([]);
+
     useEffect(() => {
-        axios.get("/data.json")
-            .then(response => {
-                setArticles(response.data.articles || [])
-                setIntroductions(response.data.introductions || [])
-                setPodcast(response.data.podcasts || [])
-            })
-            .catch(error => console.error("Lỗi tải dữ liệu: ", error))
-    }, []);
+        axios.get('http://localhost:4000/articles').then(res => setArticles(res.data)).catch(err => console.error(err))
+    })
+    useEffect(() => {
+        axios.get('http://localhost:4000/introductions').then(res => setIntroductions(res.data)).catch(err => console.error(err))
+    })
+    useEffect(() => {
+        axios.get('http://localhost:4000/podcasts').then(res => setPodcast(res.data)).catch(err => console.error(err))
+    })
     const HideIntroduction = (id: number) => {
         setClosedIntroduct([...closedIntroduct, id])
     }
@@ -47,7 +48,7 @@ const Introduct = () => {
                             <a className="flex justify-end items-start mb-3 w-full py-5 border" href='/'>
                                 <img src={intro.imgIntro} alt={intro.imgIntro} className="rounded-4xl" />
                             </a>
-                            <button onClick={()=>HideIntroduction(intro.id)} className='absolute top-0 right-0 text-lg font-bold cursor-pointer border-black bg-black'><RxCross2 color='white' /></button>
+                            <button onClick={() => HideIntroduction(intro.id)} className='absolute top-0 right-0 text-lg font-bold cursor-pointer border-black bg-black'><RxCross2 color='white' /></button>
                         </div>
                     )))}
                 <div>
@@ -91,14 +92,14 @@ const Introduct = () => {
                 <div className="mt-5  mb-10">
                     {introductions.slice(2, 3).map((intro, index) => (
                         !closedIntroduct.includes(intro.id) && (
-                        <div key={intro.id || index} >
-                            <a className={`flex justify-end items-start mb-3 w-full py-5 border relative    `} >
-                                <img src={intro.imgIntro} alt={intro.imgIntro} className="rounded-4xl" />
-                                <button onClick={() => HideIntroduction(intro.id)} className='absolute top-0 right-0 text-lg font-bold cursor-pointer border-black bg-black'><RxCross2 color='white' /></button>
+                            <div key={intro.id || index} >
+                                <a className={`flex justify-end items-start mb-3 w-full py-5 border relative    `} >
+                                    <img src={intro.imgIntro} alt={intro.imgIntro} className="rounded-4xl" />
+                                    <button onClick={() => HideIntroduction(intro.id)} className='absolute top-0 right-0 text-lg font-bold cursor-pointer border-black bg-black'><RxCross2 color='white' /></button>
 
-                            </a>
-                        </div>
-                    )))}
+                                </a>
+                            </div>
+                        )))}
                 </div>
             </section>
         </div>

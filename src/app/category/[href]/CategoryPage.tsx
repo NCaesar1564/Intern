@@ -26,10 +26,10 @@ const CategoryPage = () => {
 
   useEffect(() => {
     if (!href || typeof href !== "string") return;
-    fetch('/data.json')
+    fetch('http://localhost:4000/categories')
       .then(res => res.json())
       .then((data) => {
-        const CategoryAccess = data.categories.find((a: Categories) => a.href === href);
+        const CategoryAccess = data.find((a: Categories) => a.href === href);
         setCategories(CategoryAccess || null)
       })
       .catch(error => console.error(error))

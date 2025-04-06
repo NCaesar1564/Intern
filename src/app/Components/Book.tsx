@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/app/Components/ui/carousel"
+import axios from 'axios'
 
 export default function Book() {
   interface Article {
@@ -20,9 +21,8 @@ export default function Book() {
   };
   const [articles, setArticles] = useState<Article[]>([]);
   useEffect(() => {
-    fetch("/data.json")
-      .then(respose => respose.json())
-      .then((data) => setArticles(data.articles))
+    axios.get("http://localhost:4000/articles")
+      .then((data) => setArticles(data.data))
       .catch(error => console.error("Lỗi mẹ gòy: ", error));
   });
   return (
@@ -35,7 +35,6 @@ export default function Book() {
                 <CardContent className="flex flex-col h-fit hover:text-blue-400">
                   <Link href={`/article/${article.hashtags}`}>
                     <img
-                      // src="/images/chagee_znews.webp"
                       src={article.imgArticle}
                       alt={article.nameArticle}
                       className="h-36 w-full object-cover rounded-t-lg border" />

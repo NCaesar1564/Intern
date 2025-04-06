@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import axios from "axios";
 const Article = () => {
     interface Article {
         id: number;
@@ -16,9 +17,8 @@ const Article = () => {
     const [articles, setArticles] = useState<Article[]>([]);
 
     useEffect(() => {
-        fetch("data.json")
-            .then((response) => response.json())
-            .then((data) => setArticles(data.articles))
+        axios.get("http://localhost:4000/articles")
+            .then((data) => setArticles(data.data))
             .catch((error) => console.error("Lỗi mẹ nữa gòy: ", error));
     }, []);
 
