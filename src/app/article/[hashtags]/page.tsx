@@ -1,4 +1,3 @@
-import axios from 'axios'
 import ArticlePage from './ArticleDetail'
 import type { Metadata, ResolvingMetadata } from 'next'
 
@@ -13,8 +12,8 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const id = params.id
 
-  const article = await axios.get(`http://localhost:4000/articles/${id}`)
-    .then((res) => res.data)
+  const article = await fetch(`http://localhost:4000/articles/${id}`)
+    .then((res) => res.json())
     .catch(() => null)
 
   if (!article) {
@@ -23,8 +22,9 @@ export async function generateMetadata(
       description: 'Không tìm thấy bài viết được yêu cầu'
     }
   }
+
   return {
-    title: article.nameArticle,
+    title: article.nameArticle ,
     description: article.description,
     openGraph: {
       url: article.hashtags,
@@ -32,7 +32,7 @@ export async function generateMetadata(
         {
           url: article.imgArticle,
           height: 1200,
-          width: 800
+          width: 800 
         }
       ],
     },
