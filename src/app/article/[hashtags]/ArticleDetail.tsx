@@ -1,36 +1,38 @@
 "use client"
-import Header from '@/app/category/containers/Header';
-import { useParams } from 'next/navigation';
+
+import Header from '@/app/category/containers/Header'
 import { useEffect, useState } from 'react'
 
-const ArticleDetail = () => {
+type ArticlePageProps = {
+  slug: string
+}
 
+const ArticleDetail = ({ slug }: ArticlePageProps) => {
   interface Article {
-    id: number;
-    idContent: number;
-    nameArticle: string;
-    imgArticle: string;
-    hashtags: string;
-    description?: string;
-    author: string;
-    content: string;
-    category: string;
+    id: number
+    idContent: number
+    nameArticle: string
+    imgArticle: string
+    hashtags: string
+    description?: string
+    author: string
+    content: string
+    category: string
   }
 
-  const params = useParams();
-  const hashtags = params.hashtags as string;
-  const [articles, setArticles] = useState<Article | null>(null);
+  const [articles, setArticles] = useState<Article | null>(null)
 
   useEffect(() => {
-    if (!hashtags || typeof hashtags !== "string") return;
+    if (!slug) return
+
     fetch('http://localhost:4000/articles')
       .then(res => res.json())
       .then((data) => {
-        const ArticleFound = data.find((a: Article) => a.hashtags === hashtags);
+        const ArticleFound = data.find((a: Article) => a.hashtags === slug)
         setArticles(ArticleFound || null)
       })
       .catch(error => console.error(error))
-  }, [hashtags]);
+  }, [slug])
 
   const nameToLink = (str: string) => {
     return str
@@ -40,38 +42,35 @@ const ArticleDetail = () => {
       .replace(/đ/g, "d")
       .replace(/[^a-z0-9 -]/g, "")
       .replace(/\s+/g, "-")
-      .trim();
-  };
+      .trim()
+  }
 
   if (!articles) return (
     <h1 className='flex justify-center h-screen w-full items-center flex-col gap-y-3'>
-      <div className='border-8 border-black border-b-gray-400 w-[100px] h-[100px] rounded-[50%] animate-spin '></div>
+      <div className='border-8 border-black border-b-gray-400 w-[100px] h-[100px] rounded-[50%] animate-spin'></div>
       <div className='flex flex-row items-end h-fit gap-2'>
-        <p className='font-bold text-3xl animate-'>Đang tải bài báo ...</p>
+        <p className='font-bold text-3xl'>Đang tải bài báo ...</p>
       </div>
     </h1>
   )
+
   if (articles.idContent === 1) {
     return (
       <>
         <Header />
-        <div className='flex flex-col items-center justify-center w-full mt-32  not-lg:mt-20'>
+        <div className='flex flex-col items-center justify-center w-full mt-32 not-lg:mt-20'>
           <div className='w-3/4 flex flex-col justify-center items-start'>
             <a href={`/category/${nameToLink(articles.category)}`} className='hover:to-blue-500'>{articles.category}</a>
             <h1 className='text-3xl font-bold my-3'>{articles.nameArticle}</h1>
             <span className='flex flex-row gap-x-8 text-xs my-5'>
-              <p className={`font-bold ${!articles.author ? 'hidden' : ''}`}>{articles.author}</p>
+              {articles.author && <p className='font-bold'>{articles.author}</p>}
               <p>{new Date().toLocaleDateString()}</p>
             </span>
             <span className='font-bold min-h-12'>{articles.description}</span>
           </div>
           <div dangerouslySetInnerHTML={{ __html: articles.content }} />
-          <div>
-            <hr className='w-full mt-5' />
-
-          </div>
+          <div><hr className='w-full mt-5' /></div>
         </div>
-
       </>
     )
   } else if (articles.idContent === 2) {
@@ -83,7 +82,7 @@ const ArticleDetail = () => {
             <a href={`/category/${nameToLink(articles.category)}`} className='hover:to-blue-500'>{articles.category}</a>
             <h1 className='text-3xl font-bold my-3 text-center'>{articles.nameArticle}</h1>
             <span className='flex flex-row gap-x-8 text-xs my-5'>
-              <a className={`font-bold ${!articles.author ? 'hidden' : ''}`}>{articles.author}</a>
+              {articles.author && <p className='font-bold'>{articles.author}</p>}
               <p>{new Date().toLocaleDateString()}</p>
             </span>
             <p className='font-bold min-h-12'>{articles.description}</p>
@@ -92,7 +91,9 @@ const ArticleDetail = () => {
         </div>
       </>
     )
-  } else { return <div className='text-center w-full'>Không có bài viết này</div> }
+  } else {
+    return <div className='text-center w-full'>Không có bài viết này</div>
+  }
 }
 
 export default ArticleDetail

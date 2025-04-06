@@ -1,21 +1,28 @@
-import ArticlePage from './ArticleDetail'
+import ArticleDetail from './ArticleDetail'
 import type { Metadata, ResolvingMetadata } from 'next'
- 
+
 type Props = {
-  params: Promise<{ hashtag: string }>
-  searchParams: Promise<{[key: string]: string | string[] | undefined }>
+  params: { hashtags: string }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
- 
+
 export async function generateMetadata(
-  { params, searchParams }: Props,
+  { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const slug =(await params).hashtag 
-  const post = await fetch(`http://localhost:4000/articles/${slug}`).then((res) =>
-    res.json()
-  )
- 
-  return {  
+  const slug = params.hashtags;
+  const res = await fetch(`http://localhost:4000/articles/${slug}`);
+
+  if (!res.ok) {
+    return {
+      title: "Bài viết không tồn tại",
+      description: "Không tìm thấy bài viết này trong hệ thống.",
+    };
+  }
+
+  const post = await res.json();
+
+  return {
     title: post.nameArticle,
     description: post.description,
     openGraph: {
@@ -24,12 +31,13 @@ export async function generateMetadata(
           url: post.imgArticle,
           height: 1200,
           width: 720,
-        }
-      ]
-    }
-  }
+        },
+      ],
+    },
+  };
 }
 
-export default function Page() {
-  return <ArticlePage  />
+
+export default function Page({ params }: Props) {
+  return <ArticleDetail slug={params.hashtags} />
 }
