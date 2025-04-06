@@ -1,44 +1,44 @@
-import { Metadata } from 'next';
-import ArticleDetail from './ArticleDetail'; 
-import axios from 'axios';
+import axios from 'axios'
+import ArticlePage from './ArticleDetail'
+import type { Metadata, ResolvingMetadata } from 'next'
 
-type Params = { hashtags: string };
-
-interface PageProps {
-  params: Params;
+type Props = {
+  params: { id: number }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { hashtags } = params;
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const id = params.id
 
-  const res = await axios.get(`http://localhost:4000/articles`);
-  const article = res.data.find((a: { hashtags: string }) => a.hashtags === hashtags);
+  const article = await axios.get(`http://localhost:4000/articles/${id}`)
+    .then((res) => res.data)
+    .catch(() => null)
 
   if (!article) {
     return {
       title: 'Bài viết không tồn tại',
-      description: 'Không tìm thấy bài viết yêu cầu',
-    };
+      description: 'Không tìm thấy bài viết được yêu cầu'
+    }
   }
-
   return {
     title: article.nameArticle,
     description: article.description,
     openGraph: {
-      title: article.nameArticle,
-      description: article.description,
-      url: `http://localhost:4000/articles/${article.hashtags}`,
+      url: article.hashtags,
       images: [
         {
           url: article.imgArticle,
-          width: 1200,
-          height: 630,
-        },
+          height: 1200,
+          width: 800
+        }
       ],
     },
-  };
+  }
 }
 
-export default function Page({ params }: PageProps) {
-  return <ArticleDetail />;
+export default function Page() {
+  return <ArticlePage />
 }
