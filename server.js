@@ -5,7 +5,6 @@ const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'public/data.json'));
 const middlewares = jsonServer.defaults();
 
-// Custom route rewrite
 server.use(
   jsonServer.rewriter({
     '/articles/:hashtags': '/articles?hashtags=:hashtags'

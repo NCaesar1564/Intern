@@ -11,7 +11,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const slug = params.hashtags;
-  const res = await fetch(`http://localhost:4000/articles/${slug}`);
+  const res = await fetch(`http://localhost:4000/articles?hashtags=${slug}`);
 
   if (!res.ok) {
     return {
