@@ -5,7 +5,7 @@ import Image from "next/image";
 import axios from "axios";
 const Article = () => {
     interface Article {
-        id: number;
+        id: string;
         idContent: number;
         nameArticle: string;
         imgArticle: string;
@@ -24,14 +24,13 @@ const Article = () => {
 
     return (
         <>
-            <div className="grid grid-cols-3 justify-center text-center w-full gap-x-5 my-5 mt-16
-            not-lg:gap-x-3">
+            <div className="grid grid-cols-3 justify-center text-center w-full gap-x-5 my-5 mt-16 not-lg:gap-x-3">
                 <div className="flex justify-end flex-row">
                     <div className="flex gap-4 flex-col w-1/2 
                     not-lg:hidden" >
                         {articles.slice(0, 5).map((article) => (
                             <a className="flex flex-row w-full justify-center hover:text-green-800 "
-                                key={article.hashtags}
+                                key={article.id}
                                 href={`article/${article.hashtags}`}>
                                 <span className="w-1/3 cursor-pointer flex justify-center not-lg:w-full">
                                     <Image
@@ -55,8 +54,8 @@ const Article = () => {
                     <div className="flex justify-center items-start w-full" >
                         {articles.slice(5, 6).map((article) => (
                             <Link className="flex gap-4 flex-col hover:text-green-800 text-start"
-                                key={article.hashtags}
-                                href={`${article.hashtags}`}>
+                                key={article.id}
+                                href={`/article/${article.id}`}>
                                 <span className="cursor-pointer">
                                     <img
                                         src={article.imgArticle}
@@ -77,8 +76,8 @@ const Article = () => {
                         not-lg:w-full" >
                         {articles.slice(6, 8).map((article) => (
                             <Link className="flex flex-col  w-full justify-center hover:text-green-800"
-                                key={article.hashtags}
-                                href={`${article.hashtags}`}>
+                                key={article.id}
+                                href={`/article/${article.id}`}>
                                 <span className="cursor-pointer flex justify-center w-full ">
                                     <img
                                         src={article.imgArticle} alt={article.nameArticle}
