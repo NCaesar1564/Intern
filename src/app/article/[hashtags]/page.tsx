@@ -2,7 +2,7 @@ import ArticlePage from './ArticleDetail'
 import type { Metadata, ResolvingMetadata } from 'next'
 
 type Props = {
-  params: { id: number }
+  params: { id: string }  
   searchParams: { [key: string]: string | string[] | undefined }
 }
 
@@ -10,7 +10,7 @@ export async function generateMetadata(
   { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const id = params.id
+  const id = parseInt(params.id) 
 
   const article = await fetch(`http://localhost:4000/articles/${id}`)
     .then((res) => res.json())
@@ -24,21 +24,23 @@ export async function generateMetadata(
   }
 
   return {
-    title: article.nameArticle ,
+    title: article.nameArticle,
     description: article.description,
     openGraph: {
+      title: article.nameArticle,
+      description: article.description,
       url: article.hashtags,
       images: [
         {
           url: article.imgArticle,
+          width: 800,
           height: 1200,
-          width: 800 
         }
       ],
     },
   }
 }
 
-export default function Page() {
-  return <ArticlePage />
+export default function Page({ params }: Props) {
+  return <ArticlePage params={params} />
 }
