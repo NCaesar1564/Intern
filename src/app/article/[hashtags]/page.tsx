@@ -7,9 +7,10 @@ type Props = {
 }
 
 export async function generateMetadata(
-  { params }: Props,
+  props: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
+  const {params} = await props
   const slug = params.hashtags;
   const res = await fetch(`http://localhost:4000/articles?hashtags=${slug}`);
 
