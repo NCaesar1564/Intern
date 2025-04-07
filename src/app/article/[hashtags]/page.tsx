@@ -13,13 +13,6 @@ export const generateMetadata = async (
     cache: 'no-store',
   });
 
-  if (!res.ok) {
-    return {
-      title: 'Không tìm thấy bài viết',
-      description: 'Bài viết bạn tìm kiếm không tồn tại.',
-    };
-  }
-
   const data = await res.json();
 
   const article = Array.isArray(data) ? data[0] : data;
@@ -35,11 +28,17 @@ export const generateMetadata = async (
     title: article.nameArticle,
     description: article.description,
     openGraph: {
-      images: [article.imgArticle],
+      images: [{
+        url: article.imgArticle,
+        height: 1200,
+        width: 800,
+        alt: article.nameArticle
+      }],
+      url: article.hashtags
     },
   };
 };
 
-export default function Page() {
+export default function Page({ params }: Props) {
   return <ArticleDetail />
 }
