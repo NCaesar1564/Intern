@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 
 
-export default function ArticleDetail({ hashtags }: { hashtags: string }) {
+export default function ArticleDetail({hashtags} : {hashtags: string}) {
 
   interface Article {
     id: number;
@@ -20,7 +20,7 @@ export default function ArticleDetail({ hashtags }: { hashtags: string }) {
   }
 
   const params = useParams();
-  hashtags = params.hashtags as string;
+   hashtags = params.hashtags as string;
   const [articles, setArticles] = useState<Article | null>(null);
 
   useEffect(() => {

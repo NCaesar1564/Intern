@@ -49,5 +49,5 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
 };
 
 export default function Page({ params }: PageProps) {
-  return <ArticleDetail /> 
+  return <ArticleDetail hashtags={params.hashtags}/> 
 }
