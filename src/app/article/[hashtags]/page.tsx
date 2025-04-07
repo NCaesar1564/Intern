@@ -1,44 +1,45 @@
 import ArticleDetail from './ArticleDetail'
-import type { Metadata, ResolvingMetadata } from 'next'
+import type { Metadata } from 'next'
 
 type Props = {
-  params: { hashtags: string }
-  searchParams: { [key: string]: string | string[] | undefined }
+  params: {
+    hashtags: string
+  }
 }
-
-export async function generateMetadata(
-  props: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const {params} = await props
-  const slug = params.hashtags;
-  const res = await fetch(`http://localhost:4000/articles?hashtags=${slug}`);
+export const generateMetadata = async (
+  { params }: Props
+): Promise<Metadata> => {
+  const res = await fetch(`http://localhost:4000/articles?hashtags=${params.hashtags}`, {
+    cache: 'no-store',
+  });
 
   if (!res.ok) {
     return {
-      title: "Bài viết không tồn tại",
-      description: "Không tìm thấy bài viết này trong hệ thống.",
+      title: 'Không tìm thấy bài viết',
+      description: 'Bài viết bạn tìm kiếm không tồn tại.',
     };
   }
 
-  const post = await res.json();
+  const data = await res.json();
+
+  const article = Array.isArray(data) ? data[0] : data;
+
+  if (!article) {
+    return {
+      title: 'Không tìm thấy bài viết',
+      description: 'Bài viết bạn tìm kiếm không tồn tại.',
+    };
+  }
 
   return {
-    title: post.nameArticle,
-    description: post.description,
+    title: article.nameArticle,
+    description: article.description,
     openGraph: {
-      images: [
-        {
-          url: post.imgArticle,
-          height: 1200,
-          width: 720,
-        },
-      ],
+      images: [article.imgArticle],
     },
   };
-}
+};
 
-
-export default function Page({ params }: Props) {
-  return <ArticleDetail slug={params.hashtags} />
+export default function Page() {
+  return <ArticleDetail />
 }

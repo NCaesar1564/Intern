@@ -55,7 +55,7 @@ const Article = () => {
                         {articles.slice(5, 6).map((article) => (
                             <Link className="flex gap-4 flex-col hover:text-green-800 text-start"
                                 key={article.id}
-                                href={`/article/${article.id}`}>
+                                href={`/article/${article.hashtags}`}>
                                 <span className="cursor-pointer">
                                     <img
                                         src={article.imgArticle}
@@ -77,7 +77,7 @@ const Article = () => {
                         {articles.slice(6, 8).map((article) => (
                             <Link className="flex flex-col  w-full justify-center hover:text-green-800"
                                 key={article.id}
-                                href={`/article/${article.id}`}>
+                                href={`/article/${article.hashtags}`}>
                                 <span className="cursor-pointer flex justify-center w-full ">
                                     <img
                                         src={article.imgArticle} alt={article.nameArticle}
