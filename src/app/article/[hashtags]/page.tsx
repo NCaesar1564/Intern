@@ -17,6 +17,7 @@ export async function generateMetadata(
     title: a.nameArticle,
     description: a.description,
     openGraph: {
+      type: 'website',
       url: a.hashtags,
       images: [
         {
