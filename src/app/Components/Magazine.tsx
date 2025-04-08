@@ -21,7 +21,7 @@ const Magazine = () => {
     category: string;
   }
   const [articles, setArticles] = useState<Article[]>([]);
-  const [isHover, setIsHover] = useState<Number | null>(null);
+  const [isHover, setIsHover] = useState<String | null>(null);
   const Filtered = articles.filter(article => article.category === "MAGAZINE")
   useEffect(() => {
     axios.get('http://localhost:4000/articles').then(res => setArticles(res.data)).catch(err => console.error(err))
