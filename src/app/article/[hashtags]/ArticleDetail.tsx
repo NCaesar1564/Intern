@@ -3,12 +3,10 @@ import Header from '@/app/category/containers/Header';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react'
 
-
-
-export default function ArticleDetail({hashtags} : {hashtags: string}) {
+export default function ArticleDetail({ hashtags }: { hashtags: string }) {
 
   interface Article {
-    id: number;
+    id: string;
     idContent: number;
     nameArticle: string;
     imgArticle: string;
@@ -20,16 +18,16 @@ export default function ArticleDetail({hashtags} : {hashtags: string}) {
   }
 
   const params = useParams();
-   hashtags = params.hashtags as string;
+  hashtags = params.hashtags as string;
   const [articles, setArticles] = useState<Article | null>(null);
 
   useEffect(() => {
     if (!hashtags || typeof hashtags !== "string") return;
-    fetch('http://localhost:4000/articles')
+    fetch(`http://localhost:4000/articles`)
       .then(res => res.json())
       .then((data) => {
         const ArticleFound = data.find((a: Article) => a.hashtags === hashtags);
-        setArticles(ArticleFound || null)
+        setArticles(ArticleFound)
       })
       .catch(error => console.error(error))
   }, [hashtags]);
@@ -70,7 +68,6 @@ export default function ArticleDetail({hashtags} : {hashtags: string}) {
           <div dangerouslySetInnerHTML={{ __html: articles.content }} />
           <div>
             <hr className='w-full mt-5' />
-
           </div>
         </div>
 

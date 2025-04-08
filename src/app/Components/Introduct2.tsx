@@ -6,7 +6,7 @@ import { RxCross2 } from 'react-icons/rx';
 
 const Introduct2 = () => {
     interface Introduct2 {
-        id: number;
+        id: string;
         imgIntro: string;
     }
     const [introducts, setIntroducts] = useState<Introduct2[]>([])

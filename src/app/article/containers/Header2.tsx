@@ -8,7 +8,7 @@ import axios from 'axios';
 
 const Header = () => {
     interface Categories {
-        id: number;
+        id: string;
         name: string;
         href: string;
     }

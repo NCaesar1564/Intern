@@ -13,7 +13,7 @@ import axios from 'axios'
 
 export default function Book() {
   interface Article {
-    id: number;
+    id: string;
     nameArticle: string;
     imgArticle: string;
     hashtags: string;

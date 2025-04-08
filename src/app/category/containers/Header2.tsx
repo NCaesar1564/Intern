@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 const Header2 = () => {
     const [Scrolled, setScrolled] = useState(false);
     interface Articles {
-        id: number;
+        id: string;
         nameArticle: string;
         imgArticle: string;
         description: string;

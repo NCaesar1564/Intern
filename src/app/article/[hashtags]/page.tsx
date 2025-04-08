@@ -1,53 +1,39 @@
 import ArticleDetail from './ArticleDetail'
-import type { Metadata } from 'next'
+import type { Metadata, ResolvingMetadata } from 'next'
 
-type PageParams = {
-  hashtags: string
+type Props = {
+  params: Promise<{ hashtags: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-type PageProps = {
-  params: PageParams
-}
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { hashtags } = await params
+  const a = await fetch(`http://localhost:4000/articles?hashtags=${hashtags}`).then((res) => res.json())
 
-export const generateMetadata = async ({ params }: PageProps): Promise<Metadata> => {
-  try {
-    const res = await fetch(`http://localhost:4000/articles?hashtags=${params.hashtags}`, {
-      cache: 'no-store',
-    });
-
-    if (!res.ok) throw new Error('Failed to fetch article');
-    
-    const data = await res.json();
-    const article = Array.isArray(data) ? data[0] : data;
-
-    if (!article) {
-      return {
-        title: 'Không tìm thấy bài viết',
-        description: 'Bài viết bạn tìm kiếm không tồn tại.',
-      };
-    }
-
-    return {
-      title: article.nameArticle,
-      description: article.description,
-      openGraph: {
-        images: [{
-          url: article.imgArticle,
+  return {
+    title: a.nameArticle,
+    description: a.description,
+    openGraph: {
+      url: a.hashtags,
+      images: [
+        {
+          url: a.imgArticle,
           height: 1200,
           width: 800,
-          alt: article.nameArticle
-        }],
-        url: article.hashtags
-      },
-    };
-  } catch (error) {
-    return {
-      title: 'Lỗi hệ thống',
-      description: 'Đã xảy ra lỗi khi tải thông tin bài viết',
-    };
+          alt: a.nameArticle
+        }
+      ],
+    },
   }
-};
-
-export default function Page({ params }: PageProps) {
-  return <ArticleDetail hashtags={params.hashtags}/> 
+}
+export default async function Page({ params }: Props) {
+  const { hashtags } = await params;
+  return (
+    <>
+      <ArticleDetail hashtags={hashtags} />
+    </>
+  )
 }

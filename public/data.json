@@ -223,7 +223,7 @@
     ],
     "articles": [
         {
-            "id": "1",
+            "id": 1,
             "idContent": 1,
             "imgArticle": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STKS501_STOCKS_CVIRGINIA_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
             "nameArticle": "Công nghệ AI thay đổi cách làm phim hiện đại",
@@ -235,7 +235,7 @@
         },
         {
             "id": 2,
-            "idContent": "2",
+            "idContent": 2,
             "imgArticle": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25594449/STK066_VERIZON_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
             "nameArticle": "Sự phát triển của thực tế ảo trong giải trí",
             "description": "Thực tế ảo đang mở ra nhiều cơ hội mới trong lĩnh vực trò chơi và giải trí tương tác.",

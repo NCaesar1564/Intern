@@ -14,11 +14,11 @@ const Introduct = () => {
     }
 
     interface Introduction {
-        id: number;
+        id: string;
         imgIntro: string;
     }
     interface Podcast {
-        id: number;
+        id: string;
         namePodcast: string;
         imgPodcast: string;
     }

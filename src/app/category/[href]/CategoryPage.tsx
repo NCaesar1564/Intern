@@ -12,7 +12,7 @@ import ArticleInList from '../containers/ArticleInList';
 import SpecialNews from '../containers/SpecialNews';
 import Vote from '../containers/Vote';
 interface Categories {
-  id: number;
+  id: string;
   name: string;
   href: string;
 }

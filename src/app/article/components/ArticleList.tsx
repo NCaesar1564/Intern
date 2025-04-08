@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 const ArticleList = ({ cname }: any) => {
     interface Articles {
-        id: number;
+        id: string;
         nameArticle: string;
         imgArticle: string;
         description: string;

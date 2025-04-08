@@ -13,7 +13,7 @@ import {
 
 const Magazine = () => {
   interface Article {
-    id: number;
+    id: string;
     imgArticle: string;
     nameArticle: string;
     hashtags: string;

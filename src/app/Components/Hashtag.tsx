@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { HiArrowTrendingUp } from 'react-icons/hi2';
 
 interface Hashtags {
-    id: number,
+    id: string,
     tag: string
 }
 const Hashtag = () => {
