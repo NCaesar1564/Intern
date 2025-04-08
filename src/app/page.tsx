@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     description: "Trang chủ",
+    
   }
 };
 
