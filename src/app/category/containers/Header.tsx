@@ -8,7 +8,7 @@ import axios from 'axios';
 
 const Header = () => {
     interface Categories {
-        id: string;
+        id: number; 
         name: string;
         href: string;
     }
@@ -34,8 +34,8 @@ const Header = () => {
     }
 
     useEffect(() => {
-        axios.get('/data.json')
-            .then(res => setCategories(res.data.categories))
+        axios.get('http://localhost:4000/categories')
+            .then(res => setCategories(res.data))
             .catch(err => console.error(err))
     }, []);
 
