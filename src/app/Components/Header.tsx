@@ -15,7 +15,7 @@ const Header = () => {
     const [searchBar, setSearchBar] = useState(false);
     const [sidebar, setSidebar] = useState(false);
     const [categories, setCategories] = useState<Categories[]>([]);
-    const [underline, setUnderline] = useState(0);
+    const [underline, setUnderline] = useState('0');
     const SAHSearchBar = () => {
         if (searchBar === false) {
             setSearchBar(true);
@@ -42,7 +42,7 @@ const Header = () => {
     useEffect(() => {
         const underline = localStorage.getItem('underline');
         if (underline) {
-            setUnderline(Number(underline) || 0)
+            setUnderline(underline)
         }
     }, []);
     return (
@@ -50,7 +50,7 @@ const Header = () => {
             <div className={`w-[68%] flex relative justify-around not-lg:w-full`}>
                 <a href="/"
                     onClick={() => {
-                        setUnderline(0);
+                        setUnderline('0');
                         localStorage.setItem('underline', '0')
                     }}
                     className='w-2/5 h-full mr-5'>
