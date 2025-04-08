@@ -12,7 +12,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { hashtags } = await params
   const apiBase = process.env.NEXT_PUBLIC_API_BASE
-  const data = await fetch(`${apiBase}/articles?hashtags=${hashtags}`).then((res) => res.json())
+  const data = await fetch(`http://localhost:4000/articles?hashtags=${hashtags}`).then((res) => res.json())
   const a = data[0];
   return {
     title: a.nameArticle,
