@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 
 const MultiMedia = () => {
   interface Article {
-    id: string;
+    id: number;
     nameArticle: string;
     imgArticle: string;
     hashtags: string;

@@ -6,7 +6,7 @@ import { error } from 'console';
 
 const ArticleQ8 = ({ cname }: any) => {
     interface Article {
-        id: string;
+        id: number;
         nameArticle: string;
         imgArticle: string;
         hashtags: string;

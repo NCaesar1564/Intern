@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 
 const Sidebar = () => {
     interface Categories {
-        id: string,
+        id: number,
         name: string,
         href: string
     }

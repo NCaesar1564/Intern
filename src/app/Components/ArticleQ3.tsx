@@ -5,7 +5,7 @@ import TitleNoUnderline from './TitleNoUnderline';
 
 const ArticleQ3 = ({ cname }: any) => {
     interface Article {
-        id: string;
+        id: number;
         imgArticle: string;
         nameArticle: string;
         hashtags: string;
