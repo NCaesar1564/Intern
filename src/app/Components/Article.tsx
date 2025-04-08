@@ -5,7 +5,7 @@ import Image from "next/image";
 import axios from "axios";
 const Article = () => {
     interface Article {
-        id: string;
+        id: number;
         idContent: number;
         nameArticle: string;
         imgArticle: string;

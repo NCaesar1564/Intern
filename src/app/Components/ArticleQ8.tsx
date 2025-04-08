@@ -1,8 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import Title from './Title'
 import axios from 'axios';
-import { error } from 'console';
 
 const ArticleQ8 = ({ cname }: any) => {
     interface Article {
