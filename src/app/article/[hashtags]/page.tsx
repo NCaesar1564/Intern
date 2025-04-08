@@ -13,7 +13,6 @@ export async function generateMetadata(
   const { hashtags } = await params
   const data = await fetch(`http://localhost:4000/articles?hashtags=${hashtags}`).then((res) => res.json())
   const a = data[0];
-  console.log(a)
   return {
     title: a.nameArticle,
     description: a.description,
