@@ -15,8 +15,9 @@ const Video = () => {
   const [videos, setVideos] = useState<Video[]>([]);
   const [videoSelected, setVideoSelected] = useState(1)
   useEffect(() => {
-    axios.get('http://localhost:4000/videos')
-      .then(res => setVideos(res.data))
+    const host = process.env.NEXT_PUBLIC_API_BASE
+    axios.get(`/data.json`)
+      .then(res => setVideos(res.data.videos))
       .catch(error => console.error(error))
   }, [])
   return (

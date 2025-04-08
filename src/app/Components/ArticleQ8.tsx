@@ -14,9 +14,9 @@ const ArticleQ8 = ({ cname }: any) => {
     const [articles, setArticles] = useState<Article[]>([]);
     const ArticleFiltered = articles.filter(article => article.category === cname);
     useEffect(() => {
-        axios.get("http://localhost:4000/articles")
+        axios.get(`/data.json`)
             .then((response) => {
-                setArticles(response.data)
+                setArticles(response.data.articles)
             })
             .catch(error => console.error("Lỗi mẹ gòy: ", error))
     })

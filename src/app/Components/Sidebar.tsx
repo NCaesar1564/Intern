@@ -11,8 +11,9 @@ const Sidebar = () => {
     }
     const [categories, setCategories] = useState<Categories[]>([]);
     useEffect(() => {
-        axios.get("http://localhost:4000/categories")
-            .then((res) => setCategories(res.data))
+        const host = process.env.NEXT_PUBLIC_API_BASE
+        axios.get(`/data.json`)
+            .then((res) => setCategories(res.data.categories))
             .catch(error => console.error("Lỗi mẹ gòy: ", error))
     }, [])
     return (

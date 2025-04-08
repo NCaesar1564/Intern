@@ -23,10 +23,10 @@ export default function ArticleDetail({ hashtags }: { hashtags: string }) {
 
   useEffect(() => {
     if (!hashtags || typeof hashtags !== "string") return;
-    fetch(`http://localhost:4000/articles`)
+    fetch('/data.json')
       .then(res => res.json())
       .then((data) => {
-        const ArticleFound = data.find((a: Article) => a.hashtags === hashtags);
+        const ArticleFound = data.articles.find((a: Article) => a.hashtags === hashtags);
         setArticles(ArticleFound)
       })
       .catch(error => console.error(error))

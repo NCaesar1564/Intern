@@ -17,8 +17,8 @@ const Article = () => {
     const [articles, setArticles] = useState<Article[]>([]);
 
     useEffect(() => {
-        axios.get("http://localhost:4000/articles")
-            .then((data) => setArticles(data.data))
+        axios.get(`/data.json`)
+            .then((data) => setArticles(data.data.articles))
             .catch((error) => console.error("Lỗi mẹ nữa gòy: ", error));
     }, []);
 

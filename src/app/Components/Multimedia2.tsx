@@ -15,9 +15,10 @@ const Multimedia2 = () => {
     const [articles, setArticles] = useState<Article[]>([]);
 
     useEffect(() => {
-        axios.get("http://localhost:4000/articles")
+        const host = process.env.NEXT_PUBLIC_API_BASE
+        axios.get(`/data.json`)
             .then(response => {
-                setArticles(response.data)
+                setArticles(response.data.articles)
             })
             .catch(err => console.error("Lỗi mẹ gòy: ", err))
     }, []);

@@ -28,13 +28,13 @@ const Introduct = () => {
     const [closedIntroduct, setClosedIntroduct] = useState<number[]>([]);
 
     useEffect(() => {
-        axios.get('http://localhost:4000/articles').then(res => setArticles(res.data)).catch(err => console.error(err))
+        axios.get(`/data.json`).then(res => setArticles(res.data.articles)).catch(err => console.error(err))
     })
     useEffect(() => {
-        axios.get('http://localhost:4000/introductions').then(res => setIntroductions(res.data)).catch(err => console.error(err))
+        axios.get(`/data.json`).then(res => setIntroductions(res.data.introductions)).catch(err => console.error(err))
     })
     useEffect(() => {
-        axios.get('http://localhost:4000/podcasts').then(res => setPodcast(res.data)).catch(err => console.error(err))
+        axios.get(`/data.json`).then(res => setPodcast(res.data.podcasts)).catch(err => console.error(err))
     })
     const HideIntroduction = (id: number) => {
         setClosedIntroduct([...closedIntroduct, id])

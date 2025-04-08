@@ -12,8 +12,9 @@ const Introduct2 = () => {
     const [introducts, setIntroducts] = useState<Introduct2[]>([])
     const [close, setClose] = useState(false);
     useEffect(() => {
-        axios.get('http://localhost:4000/introductions')
-            .then(response => setIntroducts(response.data))
+        const host = process.env.NEXT_PUBLIC_API_BASE
+        axios.get(`/data.json`)
+            .then(response => setIntroducts(response.data.introductions))
             .catch(error => console.error("Lỗi mẹ gòy: ", error))
     })
     const HideIntroduction = () => {

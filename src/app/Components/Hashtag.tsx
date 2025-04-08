@@ -11,8 +11,8 @@ const Hashtag = () => {
     const [hashtags, setHashtags] = useState<Hashtags[]>([]);
 
     useEffect(() => {
-        axios.get("http://localhost:4000/hashtags")
-            .then(res => setHashtags(res.data))
+        axios.get(`/data.json`)
+            .then(res => setHashtags(res.data.hashtags))
             .catch(error => console.error("Lỗi mẹ r", error));
     }, [])
 
