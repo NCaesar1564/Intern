@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react'
 import { IoIosSearch } from 'react-icons/io'
-import Sidebar from './Sidebar';
+import Sidebar from '../../Components/Sidebar';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import axios from 'axios';
