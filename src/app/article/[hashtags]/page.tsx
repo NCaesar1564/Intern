@@ -1,5 +1,5 @@
 import ArticleDetail from './ArticleDetail'
-import type { Metadata, ResolvingMetadata } from 'next'
+import { Metadata, ResolvingMetadata } from 'next'
 
 type Props = {
   params: Promise<{ hashtags: string }>
@@ -11,8 +11,9 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { hashtags } = await params
-  const a = await fetch(`http://localhost:4000/articles?hashtags=${hashtags}`).then((res) => res.json())
-
+  const data = await fetch(`http://localhost:4000/articles?hashtags=${hashtags}`).then((res) => res.json())
+  const a = data[0];
+  console.log(a)
   return {
     title: a.nameArticle,
     description: a.description,

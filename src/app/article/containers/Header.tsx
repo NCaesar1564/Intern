@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react'
 import { IoIosSearch } from 'react-icons/io'
-import Sidebar from '../../Components/Sidebar';
+import Sidebar from './Sidebar';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import axios from 'axios';
@@ -34,8 +34,8 @@ const Header = () => {
     }
 
     useEffect(() => {
-        axios.get('/data.json')
-            .then(res => setCategories(res.data.categories))
+        axios.get('http://localhost:4000/categories')
+            .then(res => setCategories(res.data))
             .catch(err => console.error(err))
     }, []);
 
@@ -67,7 +67,7 @@ const Header = () => {
                                 href={`/category/${cat.href}`}
                                 className={`cursor-pointer text-xs font-bold hover:underline underline-offset-[16px]
                                      decoration-[3px] hover:text-blue-500 text-nowrap whitespace-nowrap 
-                                     ${underline === cat.id ? 'underline text-blue-500 underline-offset-[22px]' : ''} `}
+                                     ${underline === cat.id ? 'underline text-blue-500 underline-offset-[16px]' : ''} `}
                             >{cat.name}
                             </a>
                         </div>
