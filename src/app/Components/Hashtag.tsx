@@ -27,14 +27,14 @@ const Hashtag = () => {
             .trim();
     };
     return (
-        <div className='w-full h-10 flex items-center justify-center not-md:hidden mt-2'>
+        <div className='w-full h-10 flex items-center justify-center not-md:hidden mt-16'>
             <div className='flex justify-start items-center w-[68%] gap-x-3'>
                 <HiArrowTrendingUp className='bg-gradient-to-t from-red-600 to-orange-300 rounded-4xl' size={20} />
                 <div className=' flex gap-3 items-center justify-start w-3/5 '>
                     {hashtags.map((t) => (
                         <a key={t.id}
                             className='text-black bg-gray-200 rounded-2xl min-w-fit cursor-pointer hover:bg-gradient-to-l from-green-400 to to-blue-600'
-                            href={TranformToTag(t.tag)}>#{t.tag}</a>
+                            href={`/category/${TranformToTag(t.tag)}`}># {t.tag}</a>
                     ))}
                 </div>
             </div>

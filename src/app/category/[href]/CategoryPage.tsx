@@ -48,7 +48,15 @@ const CategoryPage = () => {
     return () => window.removeEventListener('scroll', HandleScroll);
   }, []);
 
-  if (!categories) return <h1 className='h-lvh flex justify-center items-center w-full font-bold'>Không có danh mục này</h1>
+  if (!categories)
+    return (
+      <h1 className='flex justify-center h-screen w-full items-center flex-col gap-y-3'>
+        <div className='border-8 border-black border-b-gray-400 w-[100px] h-[100px] rounded-[50%] animate-spin '></div>
+        <div className='flex flex-row items-end h-fit gap-2'>
+          <p className='font-bold text-3xl animate-'>Đang tải danh mục ...</p>
+        </div>
+      </h1>
+    )
 
   return (
     <div className='flex flex-col items-center'>
