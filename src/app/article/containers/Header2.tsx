@@ -76,9 +76,8 @@ const Header = () => {
                                     onClick={(e) => {
                                         setUnderline(cat.id);
                                         localStorage.setItem('underline', cat.id.toString())
-                                        // changePage(cat.id)
                                     }}
-                                    href={`/category/${cat.href}`}
+                                    href={`/${cat.href}`}
                                     className={`cursor-pointer text-xs font-bold hover:underline underline-offset-[16px]
                                      decoration-[3px] hover:text-blue-500 text-nowrap whitespace-nowrap 
                                      ${underline === cat.id ? 'underline text-blue-500 underline-offset-[16px]' : ''} `}

@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react'
 import SubCategory from '../components/SubCategory';
 import ArticleInHead from '../containers/ArticleInHead';
 import ArticleInCategory from '../containers/ArticleInCategory';
-import Footer from '@/app/Components/Footer';
 import ArticleInList from '../containers/ArticleInList';
 import SpecialNews from '../containers/SpecialNews';
 import Vote from '../containers/Vote';

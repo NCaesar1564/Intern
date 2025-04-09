@@ -82,7 +82,7 @@ export const ContentHeader = () => {
         <div>
             <div className='w-full h-full flex justify-center items-center gap-5 '>
                 {categories.slice(0, 8).map((category) => (
-                    <a href={`category/${category.href}`}
+                    <a href={`/category/${category.href}`}
                         key={category.id}
                         className='w-fit text-black font-bold text-xs text-nowrap 
                         whitespace-nowrap hover:text-blue-700 hover:underline 
@@ -102,7 +102,8 @@ export default function Header() {
         <>
             <div className={`w-full h-14 flex justify-center items-center shadow-[2px_2px_2px_rgba(0,0,0,0.2)] fixed top-0 bg-white z-50`}>
                 <div className='grid grid-cols-11 w-3/4'>
-                    <a className='h-full flex items-center justify-start col-span-2' href='/'>
+                    <a className='h-full flex items-center justify-start col-span-2'
+                        href='/'>
                         <Logo />
                     </a>
                     <span className='h-full flex items-center justify-center col-span-8'>

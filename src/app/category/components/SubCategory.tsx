@@ -25,7 +25,7 @@ const SubCategory = ({ name }: any) => {
                         <span className='flex flex-row justify-center w-full gap-5'>
                             {subFiltered.map((cat) => (
                                 <a
-                                    href={`/category/${cat.href}`}
+                                    href={`${cat.href}`}
                                     key={cat.id}
                                     className='hover:text-blue-700 cursor-pointer'
                                 >

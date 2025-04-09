@@ -24,7 +24,6 @@ const ArticleCenter = ({ cname, start, end }: any) => {
             {ArticleFiltered.slice(start, end).map((article) => (
                 <a className='cursor-pointer hover:text-blue-700 h-96' key={article.id} href={`/article/${article.hashtags}`}>
                     <img
-                        // src='../Images/chagee_znews.webp'
                         src={article.imgArticle} 
                         alt={article.nameArticle}
                         className='w-full h-80 border'

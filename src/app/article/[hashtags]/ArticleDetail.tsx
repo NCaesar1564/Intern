@@ -69,7 +69,6 @@ export default function ArticleDetail({ hashtags }: { hashtags: string }) {
             <hr className='w-full mt-5' />
           </div>
         </div>
-
       </>
     )
   } else if (articles.idContent === 2) {

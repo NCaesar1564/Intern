@@ -43,7 +43,7 @@ const Article = () => {
                                     </span>
                                     <span className="w-2/3 cursor-pointer font-bold text-sm  flex-wrap text-wrap ml-2  flex justify-start text-start not-lg:text-xs">{article.nameArticle}</span>
                                 </a>
-                                {article.id != 5 && <hr />}
+                                {article.id != 5 && <hr className="-mb-2 mt-2"/>}
                             </div>
                         ))}
                     </div>
@@ -72,7 +72,7 @@ const Article = () => {
                 <div className="flex justify-end flex-row col-span-3 not-lg:col-span-10">
                     <div className="flex gap-4 flex-col not-lg:flex-row not-lg:w-full" >
                         {articles.slice(6, 8).map((article) => (
-                            <Link className="flex flex-col  w-full justify-center hover:text-green-800"
+                            <a className="flex flex-col  w-full justify-center hover:text-green-800"
                                 key={article.id}
                                 href={`/article/${article.hashtags}`}>
                                 <span className="cursor-pointer flex justify-center w-full ">
@@ -82,7 +82,7 @@ const Article = () => {
                                         className="h-48 w-full border" />
                                 </span>
                                 <span className="cursor-pointer font-bold text-sm flex-wrap text-wrap w-full text-start not-lg:text-xs">{article.nameArticle}</span>
-                            </Link>
+                            </a>
                         ))}
                     </div>
                 </div>

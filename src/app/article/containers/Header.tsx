@@ -82,7 +82,7 @@ export const ContentHeader = () => {
         <div>
             <div className='w-full h-full flex justify-center items-center gap-5 '>
                 {categories.slice(0, 8).map((category) => (
-                    <a href={`category/${category.href}`}
+                    <a href={`${category.href}`}
                         key={category.id}
                         className='w-fit text-black font-bold text-xs text-nowrap 
                         whitespace-nowrap hover:text-blue-700 hover:underline 

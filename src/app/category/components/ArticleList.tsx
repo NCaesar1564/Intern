@@ -23,7 +23,6 @@ const ArticleList = ({ cname }: any) => {
                 <div key={article.id}>
                     <a className='flex flex-row justify-center cursor-pointer hover:text-blue-700 w-full' href={`/article/${article.hashtags}`}>
                         <img
-                            // src='../Images/chagee_znews.webp'
                             src={article.imgArticle}
                             alt={article.nameArticle}
                             className='w-1/3 h-36 border'
