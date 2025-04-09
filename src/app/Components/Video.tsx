@@ -15,15 +15,14 @@ const Video = () => {
   const [videos, setVideos] = useState<Video[]>([]);
   const [videoSelected, setVideoSelected] = useState(1)
   useEffect(() => {
-    const host = process.env.NEXT_PUBLIC_API_BASE
-    axios.get(`/data.json`)
-      .then(res => setVideos(res.data.videos))
+    axios.get(`https://znt76d-8080.csb.app/videos`)
+      .then(data => setVideos(data.data))
       .catch(error => console.error(error))
   }, [])
   return (
-    <div className='w-[71.5%] py-8 flex flex-col h-fit gap-x-5'>
+    <div className='w-full py-8 flex flex-col h-fit gap-x-5'>
       <TitleNoUnderline nameTitle="VIDEO" />
-      <div className='flex flex-row gap-x-2 not-lg:flex-col'>
+      <div className='flex flex-row gap-x-2 not-lg:flex-col h-full'>
         <div className='w-8/12 h-full not-lg:w-full'>
           {videos.slice(videoSelected - 1, videoSelected).map((video) => (
             <div key={video.id}>
@@ -33,7 +32,7 @@ const Video = () => {
             </div>
           ))}
         </div>
-        <div className='w-4/12 max-h-[360px] overflow-y-auto bg-gray-200 not-lg:w-full'>
+        <div className='w-4/12 max-h-[380px] bg-gray-200 not-lg:w-full overflow-y-hidden hover:overflow-auto'>
           {videos.slice(0, 10).map((listVideo) => (
             <div key={listVideo.id} className={`flex gap-4 m-3 cursor-pointer hover:text-blue-600 ${videoSelected === listVideo.id ? 'bg-gray-500' : ''}`}
               onClick={() => setVideoSelected(listVideo.id)}

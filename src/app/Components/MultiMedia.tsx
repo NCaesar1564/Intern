@@ -14,9 +14,9 @@ const MultiMedia = () => {
   const [articles, setArticles] = useState<Article[]>([]);
   useEffect(() => {
     const host = process.env.NEXT_PUBLIC_API_BASE
-    axios.get(`/data.json`).then(res => setArticles(res.data.articles)).catch(err => console.error(err))
+    axios.get(`https://znt76d-8080.csb.app/articles`).then(data => setArticles(data.data)).catch(err => console.error(err))
 
-  })
+  }, [])
   return (
     <div className='mt-5 w-full flex justify-center'>
       <div className='bg-amber-200 w-3/4 not-lg:w-full'>

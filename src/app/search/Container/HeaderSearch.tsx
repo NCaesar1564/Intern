@@ -43,34 +43,6 @@ export const SidebarButton = () => {
         </>
     )
 }
-export const SearchButton = () => {
-    const [searchBar, setSearchBar] = useState(false);
-    const [searchContent, setSearchContent] = useState("")
-    const router = useRouter()
-    const HandleSearchBar = () => {
-        if (searchBar === false) {
-            setSearchBar(true);
-        } else {
-            setSearchBar(false);
-        }
-    }
-    const RouteToSearchPage = () => {
-        router.push('/search')
-    }
-    return (
-        <div className='flex justify-end flex-row relative'>
-            <input
-                className={`${searchBar ? `w-50 pl-3` : `w-0`} transition-all border-black outline-black 
-            bg-gray-700 placeholder:text-white  text-white absolute top-50% right-0 h-7 rounded-sm`}
-                placeholder='Nhập nội dung cần tìm'
-                onChange={(e) => setSearchContent(e.target.value)} />
-            <IoIosSearch size={30}
-                className={`cursor-pointer hover:text-blue-400 relative ${searchBar ? `text-blue-400` : ``}`}
-                onClick={(searchContent !== "" && searchBar) ? RouteToSearchPage : HandleSearchBar}
-            />
-        </div>
-    )
-}
 export const ContentHeader = () => {
     const [categories, setCategories] = useState<Categories[]>([])
     useEffect(() => {
@@ -107,9 +79,6 @@ export default function Header() {
                     </a>
                     <span className='h-full flex items-center justify-center col-span-8'>
                         <ContentHeader />
-                    </span>
-                    <span className='h-full flex items-center justify-end col-span-1'>
-                        <SearchButton />
                     </span>
                 </div>
             </div>

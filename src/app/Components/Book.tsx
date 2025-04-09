@@ -21,10 +21,10 @@ export default function Book() {
   };
   const [articles, setArticles] = useState<Article[]>([]);
   useEffect(() => {
-    axios.get(`/data.json`)
-      .then((data) => setArticles(data.data.articles))
+    axios.get(`https://znt76d-8080.csb.app/articles`)
+      .then((data) => setArticles(data.data))
       .catch(error => console.error("Lỗi mẹ gòy: ", error));
-  });
+  }, []);
   return (
     <div className='w-full relative'>
       <Carousel>
@@ -47,7 +47,6 @@ export default function Book() {
             </CarouselItem>
           ))}
         </CarouselContent>
-
         <CarouselPrevious className='absolute left-1 z-10 cursor-pointer' />
         <CarouselNext className='absolute -right-2 z-10 cursor-pointer' />
       </Carousel>

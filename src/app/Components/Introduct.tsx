@@ -28,14 +28,14 @@ const Introduct = () => {
     const [closedIntroduct, setClosedIntroduct] = useState<number[]>([]);
 
     useEffect(() => {
-        axios.get(`/data.json`).then(res => setArticles(res.data.articles)).catch(err => console.error(err))
-    })
+        axios.get(`https://znt76d-8080.csb.app/articles`).then(data => setArticles(data.data)).catch(err => console.error(err))
+    }, [])
     useEffect(() => {
-        axios.get(`/data.json`).then(res => setIntroductions(res.data.introductions)).catch(err => console.error(err))
-    })
+        axios.get(`https://znt76d-8080.csb.app/introductions`).then(data => setIntroductions(data.data)).catch(err => console.error(err))
+    },  [])
     useEffect(() => {
-        axios.get(`/data.json`).then(res => setPodcast(res.data.podcasts)).catch(err => console.error(err))
-    })
+        axios.get(`https://znt76d-8080.csb.app/podcasts`).then(data => setPodcast(data.data)).catch(err => console.error(err))
+    }, [])
     const HideIntroduction = (id: number) => {
         setClosedIntroduct([...closedIntroduct, id])
     }

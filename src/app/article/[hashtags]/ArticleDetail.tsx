@@ -54,7 +54,6 @@ export default function ArticleDetail({ hashtags }: { hashtags: string }) {
   if (articles.idContent === 1) {
     return (
       <>
-        <Header />
         <div className='flex flex-col items-center justify-center w-full mt-32  not-lg:mt-20'>
           <div className='w-3/4 flex flex-col justify-center items-start'>
             <a href={`/category/${nameToLink(articles.category)}`} className='hover:to-blue-500'>{articles.category}</a>
@@ -76,7 +75,6 @@ export default function ArticleDetail({ hashtags }: { hashtags: string }) {
   } else if (articles.idContent === 2) {
     return (
       <>
-        <Header />
         <div className='flex items-center justify-center w-full mt-32'>
           <div className='w-3/4 flex flex-col justify-center items-center'>
             <a href={`/category/${nameToLink(articles.category)}`} className='hover:to-blue-500'>{articles.category}</a>

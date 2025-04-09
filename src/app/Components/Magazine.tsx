@@ -24,8 +24,7 @@ const Magazine = () => {
   const [isHover, setIsHover] = useState<Number | null>(null);
   const Filtered = articles.filter(article => article.category === "MAGAZINE")
   useEffect(() => {
-    const host = process.env.NEXT_PUBLIC_API_BASE
-    axios.get(`/data.json`).then(res => setArticles(res.data.articles)).catch(err => console.error(err))
+    axios.get(`https://znt76d-8080.csb.app/articles`).then(data => setArticles(data.data)).catch(err => console.error(err))
   }, []);
   return (
     <div className='w-full'>

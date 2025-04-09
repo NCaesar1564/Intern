@@ -11,8 +11,8 @@ const Hashtag = () => {
     const [hashtags, setHashtags] = useState<Hashtags[]>([]);
 
     useEffect(() => {
-        axios.get(`/data.json`)
-            .then(res => setHashtags(res.data.hashtags))
+        axios.get(`https://znt76d-8080.csb.app/hashtags`)
+            .then(data => setHashtags(data.data))
             .catch(error => console.error("Lỗi mẹ r", error));
     }, [])
 
@@ -27,8 +27,8 @@ const Hashtag = () => {
             .trim();
     };
     return (
-        <div className='w-full h-10 flex items-center justify-center not-md:hidden mt-16'>
-            <div className='flex justify-start items-center w-[68%] gap-x-3'>
+        <div className='w-full h-10 flex items-center justify-center not-lg:hidden mt-16'>
+            <div className='flex justify-start items-center w-3/4 gap-x-3'>
                 <HiArrowTrendingUp className='bg-gradient-to-t from-red-600 to-orange-300 rounded-4xl' size={20} />
                 <div className=' flex gap-3 items-center justify-start w-3/5 '>
                     {hashtags.map((t) => (

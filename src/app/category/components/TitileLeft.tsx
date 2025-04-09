@@ -1,5 +1,3 @@
-import React, { useCallback, useState } from 'react'
-
 const TitileLeft = ({ nameTitle } : any) => {  
   return (
     <div className='flex flex-col items-center w-full'>

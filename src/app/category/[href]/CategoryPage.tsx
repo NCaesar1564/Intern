@@ -3,7 +3,7 @@ import Header from '../containers/Header';
 import TitileLeft from '../components/TitileLeft'
 import TitileCenter from '../components/TitileCenter'
 import { useParams } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import SubCategory from '../components/SubCategory';
 import ArticleInHead from '../containers/ArticleInHead';
 import ArticleInCategory from '../containers/ArticleInCategory';
@@ -16,37 +16,34 @@ interface Categories {
   name: string;
   href: string;
 }
-
+interface SubCategory {
+  id: string;
+  name: string;
+  href: string;
+  category: string;
+}
 const CategoryPage = () => {
   const params = useParams();
   const href = params.href as string;
   const [categories, setCategories] = useState<Categories | null>(null);
-  const [Scrolled, setScrolled] = useState(false);
-
+  const [subcategories, setSubcategories] = useState<Categories | null>(null);
 
   useEffect(() => {
     if (!href || typeof href !== "string") return;
-    const host = process.env.NEXT_PUBLIC_API_BASE
     fetch(`/data.json`)
       .then(res => res.json())
       .then((data) => {
         const CategoryAccess = data.categories.find((a: Categories) => a.href === href);
-        setCategories(CategoryAccess || null)
+        const SubcategoryAccess = data.categories.find((a: SubCategory) => a.href === href);
+
+        setCategories(CategoryAccess || null);
+
+        setSubcategories(SubcategoryAccess || null)
       })
       .catch(error => console.error(error))
   }, [href]);
 
-  useEffect(() => {
-    const HandleScroll = () => {
-      if (window.scrollY > 256) {
-        setScrolled(true);
-      } else {
-        setScrolled(false)
-      }
-    }
-    window.addEventListener('scroll', HandleScroll)
-    return () => window.removeEventListener('scroll', HandleScroll);
-  }, []);
+
 
   if (!categories)
     return (
@@ -68,6 +65,8 @@ const CategoryPage = () => {
           <TitileCenter nameTitle={categories.name} />
           <SubCategory name={categories.name} />
         </div>
+
+
         <div className='mt-3'>
           <ArticleInHead cname={categories.name} />
         </div>
@@ -91,9 +90,7 @@ const CategoryPage = () => {
           </span>
         </div>
       </div>
-      <div className='w-full'>
-        <Footer />
-      </div>
+
     </div>
   )
 }
