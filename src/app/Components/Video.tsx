@@ -32,7 +32,7 @@ const Video = () => {
             </div>
           ))}
         </div>
-        <div className='w-4/12 max-h-[380px] bg-gray-200 not-lg:w-full overflow-y-hidden hover:overflow-auto'>
+        <div className='w-4/12 max-h-[380px] bg-gray-200 not-lg:w-full overflow-y-hidden hover:overflow-auto not-md:overflow-auto'>
           {videos.slice(0, 10).map((listVideo) => (
             <div key={listVideo.id} className={`flex gap-4 m-3 cursor-pointer hover:text-blue-600 ${videoSelected === listVideo.id ? 'bg-gray-500' : ''}`}
               onClick={() => setVideoSelected(listVideo.id)}
